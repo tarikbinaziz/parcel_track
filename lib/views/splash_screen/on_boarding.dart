@@ -34,9 +34,9 @@ class OnBoardingScreen extends ConsumerWidget {
                 child: Image.asset(
                   Theme.of(context).scaffoldBackgroundColor ==
                           AppColor.grayBlackBG
-                      ? "assets/images/png/logo_white.png"
+                      ? "assets/images/png/logo_black.png"
                       : "assets/images/png/logo_black.png",
-                  height: 120.h,
+                  height: 80.h,
                 ),
               ),
               AnimatedScale(

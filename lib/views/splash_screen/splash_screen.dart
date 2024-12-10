@@ -34,7 +34,7 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
       const Duration(seconds: 1),
       () {
         context.nav
-            .pushNamedAndRemoveUntil(Routes.dashboardScreen, (route) => false);
+            .pushNamedAndRemoveUntil(Routes.onBoardingScreen, (route) => false);
       },
     );
   }
