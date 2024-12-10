@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:parcel_track/config/app_color.dart';
 import 'package:parcel_track/config/app_text.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -8,10 +9,20 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[100],
+      // backgroundColor: Colors.grey[100],
       appBar: AppBar(
+        automaticallyImplyLeading: false,
+        scrolledUnderElevation: 0,
         backgroundColor: Colors.white,
         elevation: 0,
+        leading: Padding(
+          padding: const EdgeInsets.only(left: 12.0),
+          child: Container(
+              decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: AppColor.primaryColor.withOpacity(0.1)),
+              child: const Icon(Icons.person, color: AppColor.primaryColor)),
+        ),
         title: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -19,85 +30,99 @@ class HomeScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  "Welcome Back",
-                  style: AppTextStyle.title,
+                  "Welcome",
+                  style:
+                      AppTextStyle.normalBody.copyWith(color: Colors.grey[600]),
                 ),
                 Text(
                   "Dev Tarik",
-                  style: AppTextStyle.normalBody,
+                  style: AppTextStyle.title,
                 ),
               ],
             ),
             IconButton(
-              icon:
-                  const Icon(Icons.notifications_outlined, color: Colors.black),
+              icon: Image.asset(
+                "assets/images/png/notification.png",
+                height: 24.h,
+                width: 24.w,
+              ),
               onPressed: () {},
             ),
           ],
         ),
         actions: const [
-          CircleAvatar(
-            backgroundColor: Colors.blue,
-            child: Text("DE", style: TextStyle(color: Colors.white)),
-          ),
+          // CircleAvatar(
+          //   backgroundColor: Colors.blue,
+          //   child: Text("DE", style: TextStyle(color: Colors.white)),
+          // ),
         ],
       ),
-      body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 12.h),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              "What would you like to do?",
-              style: TextStyle(fontSize: 16.sp, color: Colors.grey[600]),
-            ),
-            SizedBox(height: 20.h),
-            // Options
-            Column(
-              children: [
-                SizedBox(
-                  height: 112.h,
-                  width: double.infinity,
-                  child: _buildOptionCard(
-                    context,
-                    title: "Instant Delivery",
-                    description:
-                        "Courier takes only your package and delivers instantly",
-                    icon: Icons.flash_on,
-                    backgroundColor: Colors.lightBlue.shade100,
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 12.h),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                "What would you like to do?",
+                style: TextStyle(fontSize: 16.sp, color: Colors.grey[600]),
+              ),
+              SizedBox(height: 16.h),
+              // Options
+              Column(
+                children: [
+                  SizedBox(
+                    height: 124.h,
+                    width: double.infinity,
+                    child: _buildOptionCard(
+                      context,
+                      title: "Instant Delivery",
+                      description:
+                          "Courier takes only your package and delivers instantly",
+                      icon: Icons.flash_on,
+                      backgroundColor: AppColor.cardLightPrimaryBg,
+                    ),
                   ),
-                ),
-                SizedBox(height: 12.h),
-                SizedBox(
-                  height: 112.h,
-                  width: double.infinity,
-                  child: _buildOptionCard(
-                    context,
-                    title: "Schedule Delivery",
-                    description:
-                        "Courier comes to pick up on your specified date and time",
-                    icon: Icons.schedule,
-                    backgroundColor: Colors.teal.shade100,
+                  SizedBox(height: 12.h),
+                  SizedBox(
+                    height: 124.h,
+                    width: double.infinity,
+                    child: _buildOptionCard(
+                      context,
+                      title: "Schedule Delivery",
+                      description:
+                          "Courier comes to pick up on your specified date and time",
+                      icon: Icons.schedule,
+                      backgroundColor: AppColor.greyBackgroundColor,
+                    ),
                   ),
-                ),
-              ],
-            ),
-            SizedBox(height: 30.h),
-            // History Section
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text(
-                  "History",
-                  style:
-                      TextStyle(fontSize: 16.sp, fontWeight: FontWeight.bold),
-                ),
-                TextButton(onPressed: () {}, child: const Text("View all")),
-              ],
-            ),
-            Expanded(
-              child: ListView.builder(
-                itemCount: 2,
+                ],
+              ),
+              SizedBox(height: 16.h),
+              // History Section
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    "History",
+                    style: AppTextStyle.title.copyWith(
+                        color: AppColor.primaryColor, fontSize: 16.sp),
+                  ),
+                  GestureDetector(
+                    onTap: () {},
+                    child: Text(
+                      "View all",
+                      style: AppTextStyle.title.copyWith(
+                          color: AppColor.primaryColor, fontSize: 16.sp),
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(height: 8.h),
+              ListView.builder(
+                itemCount: 6,
+                shrinkWrap: true,
+                physics: const NeverScrollableScrollPhysics(),
                 itemBuilder: (context, index) {
                   return _buildHistoryCard(
                     context,
@@ -109,8 +134,8 @@ class HomeScreen extends StatelessWidget {
                   );
                 },
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
@@ -121,32 +146,30 @@ class HomeScreen extends StatelessWidget {
       required String description,
       required IconData icon,
       required Color backgroundColor}) {
-    return Expanded(
-      child: Container(
-        padding: EdgeInsets.all(12.w),
-        decoration: BoxDecoration(
-          color: backgroundColor,
-          borderRadius: BorderRadius.circular(10.r),
-        ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Icon(icon, color: Colors.blue, size: 30.sp),
-            SizedBox(height: 10.h),
-            Text(
-              title,
-              style: TextStyle(
-                  fontSize: 16.sp,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.black),
-            ),
-            SizedBox(height: 5.h),
-            Text(
-              description,
-              style: TextStyle(fontSize: 12.sp, color: Colors.grey[700]),
-            ),
-          ],
-        ),
+    return Container(
+      padding: EdgeInsets.all(12.w),
+      decoration: BoxDecoration(
+        color: backgroundColor,
+        borderRadius: BorderRadius.circular(10.r),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Icon(icon, color: Colors.blue, size: 30.sp),
+          SizedBox(height: 10.h),
+          Text(
+            title,
+            style: TextStyle(
+                fontSize: 16.sp,
+                fontWeight: FontWeight.bold,
+                color: Colors.black),
+          ),
+          SizedBox(height: 5.h),
+          Text(
+            description,
+            style: TextStyle(fontSize: 12.sp, color: Colors.grey[700]),
+          ),
+        ],
       ),
     );
   }
@@ -158,6 +181,7 @@ class HomeScreen extends StatelessWidget {
       required String date,
       required String status}) {
     return Card(
+      color: Colors.white,
       margin: EdgeInsets.symmetric(vertical: 8.h),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.r)),
       child: Padding(
@@ -178,8 +202,8 @@ class HomeScreen extends StatelessWidget {
                 Container(
                   width: 8.w,
                   height: 8.h,
-                  decoration: const BoxDecoration(
-                    color: Colors.green,
+                  decoration: BoxDecoration(
+                    color: AppColor.completed,
                     shape: BoxShape.circle,
                   ),
                 ),

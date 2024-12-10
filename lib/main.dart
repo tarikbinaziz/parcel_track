@@ -67,7 +67,7 @@ class MyApp extends ConsumerWidget {
                 GlobalCupertinoLocalizations.delegate,
                 FormBuilderLocalizations.delegate,
               ],
-              theme: isDark ? AppTheme.darkTheme : AppTheme.lightTheme,
+                theme: isDark ? AppTheme.darkTheme : AppTheme.lightTheme,
               locale: resolveLocale(selectedLocal as String?),
               localeResolutionCallback: (deviceLocale, supportedLocales) {
                 if (selectedLocal == null || selectedLocal == '') {

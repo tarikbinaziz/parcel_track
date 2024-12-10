@@ -9,5 +9,7 @@ class AppColor {
   static Color shimmerColor = Colors.grey[100]!;
   static Color grayBlackBG = const Color(0xFF111827);
   static Color cardBlackBg = const Color(0xFF24262D);
+  static Color cardLightPrimaryBg = const Color(0xFFA8DADC);
   static Color black = Colors.black;
+  static Color completed = const Color(0xff27794D);
 }

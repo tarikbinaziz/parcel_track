@@ -28,7 +28,7 @@ class AppTheme {
   static ThemeData lightTheme = ThemeData(
     fontFamily: 'Rotobo',
     useMaterial3: true,
-    scaffoldBackgroundColor: AppColor.greyBackgroundColor,
+    scaffoldBackgroundColor: AppColor.whiteColor,
     canvasColor: AppColor.whiteColor,
     brightness: Brightness.light,
     dialogTheme: const DialogTheme(
