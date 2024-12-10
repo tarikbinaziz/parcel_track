@@ -8,7 +8,7 @@ import 'package:parcel_track/views/auth/login_screen.dart';
 import 'package:parcel_track/views/auth/signup_screen.dart';
 import 'package:parcel_track/views/cart/my_cart_screen.dart';
 import 'package:parcel_track/views/dashboard/dashboard_screen.dart';
-import 'package:parcel_track/views/dashboard/nearby_store/store_details.dart';
+import 'package:parcel_track/views/dashboard/home_screen/instant_delivery_screen.dart';
 import 'package:parcel_track/views/dashboard/order_screen/components/order_details.dart';
 import 'package:parcel_track/views/dashboard/payment/shipping_and_payment.dart';
 import 'package:parcel_track/views/dashboard/profile_screen/components/about_us.dart';
@@ -17,8 +17,6 @@ import 'package:parcel_track/views/dashboard/profile_screen/components/manage_ad
 import 'package:parcel_track/views/dashboard/profile_screen/components/privacy_and_policy.dart';
 import 'package:parcel_track/views/dashboard/profile_screen/components/profile_update.dart';
 import 'package:parcel_track/views/dashboard/profile_screen/components/terms_and_conditions.dart';
-import 'package:parcel_track/views/dashboard/service_screen/components/service_based_stores.dart';
-import 'package:parcel_track/views/dashboard/service_screen/product_screen.dart';
 import 'package:parcel_track/views/splash_screen/on_boarding.dart';
 import 'package:parcel_track/views/splash_screen/splash_screen.dart';
 
@@ -35,7 +33,9 @@ class Routes {
   static const onBoardingScreen = '/onBoardingScreen';
   static const phoneVerification = '/phoneVerification';
   static const dashboardScreen = '/dashboardScreen';
-  static const productScreen = '/serviceScreen';
+
+  static const instantDeliveryScreen = '/instantDeliveryScreen';
+
   static const cartScreen = '/cartScreen';
   static const shippingPayment = '/shippingPayment';
   static const manageAddress = '/manageAddress';
@@ -78,17 +78,11 @@ Route generatedRoutes(RouteSettings settings) {
       child = const DashBoardScreen();
       break;
 
-    case Routes.productScreen:
-      child = ProductScreen(
-        arg: settings.arguments as ServiceArg,
-      );
+    case Routes.instantDeliveryScreen:
+      child = InstantDeliveryScreen();
       break;
 
-    case Routes.storeDetails:
-      child = StoreDetails(
-        storeModel: settings.arguments as StoreModel,
-      );
-      break;
+
 
     case Routes.cartScreen:
       child = const CartScreen();
@@ -118,11 +112,7 @@ Route generatedRoutes(RouteSettings settings) {
       child = ProfileUpdateScreen();
       break;
 
-    case Routes.serviceBasedStores:
-      child = ServiceBasedStores(
-        serviceID: settings.arguments as int,
-      );
-      break;
+
 
     case Routes.termsAndConditions:
       child = const TermsAndConditions();

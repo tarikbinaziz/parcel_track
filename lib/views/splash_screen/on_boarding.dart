@@ -16,10 +16,7 @@ class OnBoardingScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final index = ref.watch(onBoardingSliderIndexProvider);
-    final imgPageController =
-        ref.watch(onBoardingSliderControllerProvider('image'));
-    shouldAnimate = true;
+
     return Container(
       decoration: BoxDecoration(
           image: DecorationImage(

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:parcel_track/config/app_color.dart';
 import 'package:parcel_track/config/app_text.dart';
+import 'package:parcel_track/routes.dart';
+import 'package:parcel_track/utils/extensions.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -71,16 +73,21 @@ class HomeScreen extends StatelessWidget {
               // Options
               Column(
                 children: [
-                  SizedBox(
-                    height: 124.h,
-                    width: double.infinity,
-                    child: _buildOptionCard(
-                      context,
-                      title: "Instant Delivery",
-                      description:
-                          "Courier takes only your package and delivers instantly",
-                      icon: Icons.flash_on,
-                      backgroundColor: AppColor.cardLightPrimaryBg,
+                  GestureDetector(
+                    onTap: () {
+                      context.nav.pushNamed(Routes.instantDeliveryScreen);
+                    },
+                    child: SizedBox(
+                      height: 124.h,
+                      width: double.infinity,
+                      child: _buildOptionCard(
+                        context,
+                        title: "Instant Delivery",
+                        description:
+                            "Courier takes only your package and delivers instantly",
+                        icon: Icons.flash_on,
+                        backgroundColor: AppColor.cardLightPrimaryBg,
+                      ),
                     ),
                   ),
                   SizedBox(height: 12.h),

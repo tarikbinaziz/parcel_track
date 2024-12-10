@@ -10,6 +10,7 @@ class AppColor {
   static Color grayBlackBG = const Color(0xFF111827);
   static Color cardBlackBg = const Color(0xFF24262D);
   static Color cardLightPrimaryBg = const Color(0xFFA8DADC);
+  static Color cardLightBg = const Color(0xFFF0F5F5);
   static Color black = Colors.black;
   static Color completed = const Color(0xff27794D);
 }
