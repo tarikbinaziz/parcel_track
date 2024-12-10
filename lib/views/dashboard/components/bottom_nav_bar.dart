@@ -99,6 +99,10 @@ class BottomNavBar extends ConsumerWidget {
               padding: EdgeInsets.all(8.r),
               child: SvgPicture.asset(
                 isActive ? selectedIcon : unselectedIcon,
+                colorFilter: ColorFilter.mode(
+                  isActive ? AppColor.whiteColor : Colors.grey,
+                  BlendMode.srcIn,
+                ),
               ),
             ),
           ],
@@ -117,24 +121,18 @@ class BottomNavBar extends ConsumerWidget {
 
   final List<String> _unSelectedIcon = [
     "assets/svgs/home.svg",
-    "assets/svgs/shop.svg",
-    "assets/svgs/order.svg",
-    "assets/svgs/notification.svg",
+    "assets/svgs/notepad.svg",
     "assets/svgs/user.svg",
   ];
   final List<String> _selectedIcon = [
     "assets/svgs/home_selected.svg",
-    "assets/svgs/shop_selected.svg",
-    "assets/svgs/order_selected.svg",
-    "assets/svgs/notification_selected.svg",
+    "assets/svgs/notepad-fill.svg",
     "assets/svgs/user_selected.svg",
   ];
 
   List<String> _text(BuildContext context) => [
         S.of(context).home,
-        S.of(context).shop,
-        S.of(context).order,
-        S.of(context).notification,
+        "History",
         S.of(context).profile,
       ];
 }

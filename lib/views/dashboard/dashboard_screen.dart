@@ -4,8 +4,6 @@ import 'package:parcel_track/controllers/misc/misc_provider.dart';
 import 'package:parcel_track/views/dashboard/components/bottom_nav_bar.dart';
 import 'package:parcel_track/views/dashboard/home_screen/home_screen.dart';
 import 'package:parcel_track/views/dashboard/nearby_store/near_by_store.dart';
-import 'package:parcel_track/views/dashboard/notificaton_screen/notification_screen.dart';
-import 'package:parcel_track/views/dashboard/order_screen/my_order_screen.dart';
 import 'package:parcel_track/views/dashboard/profile_screen/profile_screen.dart';
 
 class DashBoardScreen extends ConsumerWidget {
@@ -17,10 +15,6 @@ class DashBoardScreen extends ConsumerWidget {
       case 1:
         return const NearbyStoreScreen();
       case 2:
-        return const MyOrderScreen();
-      case 3:
-        return const NotificationScreen();
-      case 4:
         return const ProfileScreen();
       default:
         return const SizedBox.shrink();
