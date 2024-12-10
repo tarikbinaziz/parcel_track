@@ -147,24 +147,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                             )
                           : CustomButton(
                               onPressed: () {
-                                if (_formkey.currentState!.saveAndValidate()) {
-                                  final formData = _formkey.currentState!.value;
-
-                                  ref
-                                      .read(loginProvider.notifier)
-                                      .login(
-                                        phone: formData['phone'],
-                                        password: formData['password'],
-                                      )
-                                      .then((value) async {
-                                    if (value == true) {
-                                      context.nav
-                                          .pushNamed(Routes.dashboardScreen);
-                                    } else {
-                                      ref.invalidate(loginProvider);
-                                    }
-                                  });
-                                }
+                                context.nav.pushNamed(Routes.dashboardScreen);
                               },
                               text: S.of(context).prcdnxt,
                               isArrowRight: true,

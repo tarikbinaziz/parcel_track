@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:flutter_form_builder/flutter_form_builder.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -280,30 +279,8 @@ class _SignUpScreenState extends ConsumerState<SignUpScreen> {
                                     width: double.infinity,
                                     child: CustomButton(
                                       onPressed: () {
-                                        if (_formkey.currentState!
-                                                .saveAndValidate() &&
-                                            _formkey.currentState!
-                                                    .value['accept_terms'] ==
-                                                true) {
-                                          final data =
-                                              _formkey.currentState!.value;
-                                          ref
-                                              .read(signUpProvider.notifier)
-                                              .signUp(data: data)
-                                              .then(
-                                            (value) {
-                                              if (value == true) {
-                                                context.nav.pushNamed(
-                                                    Routes.dashboardScreen);
-                                              } else {
-                                                ref.invalidate(signUpProvider);
-                                              }
-                                            },
-                                          );
-                                        } else {
-                                          EasyLoading.showError(
-                                              "Please accept terms and conditions");
-                                        }
+                                        context.nav
+                                            .pushNamed(Routes.dashboardScreen);
                                       },
                                       text: S.of(context).signUp,
                                     ),
