@@ -1,0 +1,912 @@
+{
+  "@@locale": "ar",
+
+  "letsGetStarted": "دعنا نبدأ",
+  "@letsGetStarted": {},
+
+  "eztogetservice": "من السهل الحصول على الخدمة!",
+  "@eztogetservice": {},
+
+  "enterphone": "أدخل رقم الهاتف وكلمة المرور لتسجيل الدخول",
+  "@enterphone": {},
+
+  "entravalidphnnmbr": "أدخل رقم هاتف صالح",
+  "@entravalidphnnmbr": {},
+
+  "phnvrfctn": "التحقق من الهاتف",
+  "@phnvrfctn": {},
+
+  "cnfrmotp": "تأكيد OTP",
+  "@cnfrmotp": {},
+
+  "avlblsrvcs": "الخدمات المتاحة",
+  "@avlblsrvcs": {},
+
+  "nearbystore": "بالقرب من المتجر",
+  "@nearbystore": {},
+
+  "searchstore": "متجر البحث",
+  "@searchstore": {},
+
+  "filter": "فلتر",
+  "@filter": {},
+
+  "reset": "إعادة ضبط",
+  "@reset": {},
+
+  "mkitdfltadrs": "اجعله العنوان الافتراضي",
+  "@mkitdfltadrs": {},
+
+  "addrsstag": "علامة العنوان",
+  "@addrsstag": {},
+
+  "phnn": "رقم التليفون",
+  "@phnn": {},
+
+  "prcdnxt": "تابع التالي",
+  "@prcdnxt": {},
+
+  "rvw": "مراجعة",
+  "@rvw": {},
+
+  "lctn": "موقع",
+  "@lctn": {},
+
+  "getdirection": "احصل على الاتجاه",
+  "@getdirection": {},
+
+  "dwnldinvoice": "تنزيل فاتورة",
+  "@dwnldinvoice": {},
+
+  "rusureuwnttocnclthisorder": "هل أنت متأكد تريد إلغاء هذا الطلب؟",
+  "@rusureuwnttocnclthisorder": {},
+
+  "cnclordr": "إلغاء الطلب",
+  "@cnclordr": {},
+
+  "cllthestore": "اتصل للتخزين",
+  "@cllthestore": {},
+
+  "clltherider": "دعوة إلى رايدر",
+  "@clltherider": {},
+
+  "writeurcmnt": "اكتب لنا تعليقاتك القيمة ....",
+  "@writeurcmnt": {},
+
+  "sbmt": "يُقدِّم",
+  "@sbmt": {},
+
+  "fdbck": "تعليق",
+  "@fdbck": {},
+
+  "cntinue": "يكمل",
+  "@cntinue": {},
+
+  "pricingbrkdwn": "انهيار التسعير",
+  "@pricingbrkdwn": {},
+
+  "vwdtl": "عرض التفاصيل",
+  "@vwdtl": {},
+
+  "onlnpymnt": "الدفع عبر الإنترنت",
+  "@onlnpymnt": {},
+
+  "chng": "يتغير",
+  "@chng": {},
+
+  "chngpswrd": "تغيير كلمة المرور",
+  "@chngpswrd": {},
+
+  "skip": "يتخطى",
+  "@skip": {},
+
+  "myCart": "عربتي",
+  "@myCart": {},
+
+  "couponCode": "رمز القسيمة",
+  "@couponCode": {},
+
+  "apply": "يتقدم",
+  "@apply": {},
+
+  "removeCoupon": "إزالة القسيمة",
+  "@removeCoupon": {},
+
+  "email": "بريد إلكتروني",
+  "@email": {},
+
+  "password": "كلمة المرور",
+  "@password": {},
+
+  "forgotPassword": "هل نسيت كلمة السر؟",
+  "@forgotPassword": {},
+
+  "dontHaveAccount": "ليس لديك حساب؟",
+  "@dontHaveAccount": {},
+
+  "login": "تسجيل الدخول",
+  "@login": {},
+
+  "signUp": "اشتراك",
+  "@signUp": {},
+
+  "acceptTermsAndConditions": "تحتاج إلى قبول الشروط والأحكام",
+  "@acceptTermsAndConditions": {},
+
+  "fullName": "الاسم الكامل",
+  "@fullName": {},
+
+  "phoneNumber": "رقم التليفون",
+  "@phoneNumber": {},
+
+  "createPassword": "إنشاء كلمة المرور",
+  "@createPassword": {},
+
+  "confirmPassword": "تأكيد كلمة المرور",
+  "@confirmPassword": {},
+
+  "iAcceptAndAgreeToThe": "أنا أقبل وأوافق على",
+  "@iAcceptAndAgreeToThe": {},
+
+  "termsAndConditions": "الشروط والأحكام",
+  "@termsAndConditions": {},
+
+  "privacyPolicy": "سياسة الخصوصية",
+  "@privacyPolicy": {},
+
+  "okay": "تمام",
+  "@okay": {},
+
+  "and": "و",
+  "@and": {},
+
+  "alreadyHaveAnAccount": "هل لديك بالفعل حساب؟",
+  "@alreadyHaveAnAccount": {},
+
+  "yourntsignedin": "أنت لم يتم تسجيلها!يرجى تسجيل الدخول أولاً.",
+  "@yourntsignedin": {},
+
+  "myorder": "أوامري",
+  "@myorder": {},
+
+  "hello": "مرحبًا",
+  "@hello": {},
+
+  "plslgin": "الرجاء تسجيل الدخول",
+  "@plslgin": {},
+
+  "srvctgrs": "فئات الخدمة",
+  "@srvctgrs": {},
+
+  "ntfctns": "إشعارات",
+  "@ntfctns": {},
+
+  "nontfctn": "إخطارك فارغ.",
+  "@nontfctn": {},
+
+  "lginnow": "تسجيل الدخول الآن",
+  "@lginnow": {},
+
+  "mngaddrs": "إدارة العنوان",
+  "@mngaddrs": {},
+
+  "prvcyplcy": "سياسة الخصوصية",
+  "@prvcyplcy": {},
+
+  "trmsofsrvc": "شروط الخدمة",
+  "@trmsofsrvc": {},
+
+  "cntctus": "اتصل بنا",
+  "@cntctus": {},
+
+  "abt": "عن",
+  "@abt": {},
+
+  "lgout": "تسجيل الخروج",
+  "@lgout": {},
+
+  "edt": "يحرر",
+  "@edt": {},
+
+  "noitmcrt": "لا يوجد عنصر في العربة",
+  "@noitmcrt": {},
+
+  "nosrvcavlbl": "لا توجد خدمة متاحة",
+  "@nosrvcavlbl": {},
+
+  "noordrfnd": "لم يتم العثور على أمر",
+  "@noordrfnd": {},
+
+  "actvordr": "ترتيب نشط",
+  "@actvordr": {},
+
+  "vewall": "عرض الكل",
+  "@vewall": {},
+
+  "ordrid": "معرف الطلب",
+  "@ordrid": {},
+
+  "pickupat": "التقط في",
+  "@pickupat": {},
+
+  "dlvryat": "التسليم في",
+  "@dlvryat": {},
+
+  "ordrstats": "حالة الطلب",
+  "@ordrstats": {},
+
+  "pymntstats": "حالة الدفع",
+  "@pymntstats": {},
+
+  "sbttl": "مجموع الفرعية",
+  "@sbttl": {},
+
+  "dlvrychrg": "رسوم التوصيل",
+  "@dlvrychrg": {},
+
+  "dscnt": "تخفيض",
+  "@dscnt": {},
+
+  "ttl": "المجموع",
+  "@ttl": {},
+
+  "dlvrd": "تم التوصيل",
+  "@dlvrd": {},
+
+  "rateurexprnc": "قيم تجربتك",
+  "@rateurexprnc": {},
+
+  "date": "تاريخ",
+  "@date": {},
+
+  "dlvryoptn": "خيار التسليم",
+  "@dlvryoptn": {},
+
+  "pyblamnt": "مبلغ مستحق الدفع",
+  "@pyblamnt": {},
+
+  "status": "حالة",
+  "@status": {},
+
+  "pickedYourOrder": "PickeDyourorder",
+  "@pickedYourOrder": {},
+
+  "surewnttocnclordr": "هل أنت متأكدتريد إلغاء هذا الطلب؟",
+  "@surewnttocnclordr": {},
+
+  "cncl": "يلغي",
+  "@cncl": {},
+
+  "cnfirm": "يتأكد",
+  "@cnfirm": {},
+
+  "howwasironsrvc": "كيف كانت خدمة الكي؟",
+  "@howwasironsrvc": {},
+
+  "urfdbckwillhlp": "سوف تساعدنا ملاحظاتك على تحسين تجربة خدمة الحديد.",
+  "@urfdbckwillhlp": {},
+
+  "addadrs": "أضف العنوان",
+  "@addadrs": {},
+
+  "updtadrs": "تحديث العنوان",
+  "@updtadrs": {},
+
+  "adrsname": "اسم العنوان (على سبيل المثال: Office/Home/etc)",
+  "@adrsname": {},
+
+  "areaex": "المنطقة (على سبيل المثال: Bashundhara)",
+  "@areaex": {},
+
+  "flat": "مستوي",
+  "@flat": {},
+
+  "houseno": "منزل لا#",
+  "@houseno": {},
+
+  "postcode": "شفرة البريد",
+  "@postcode": {},
+
+  "adrsline": "خط العنوان",
+  "@adrsline": {},
+
+  "adrsline_two": "خط العنوان 2",
+  "@adrsline_two": {},
+
+  "scs": "نجاح",
+  "@scs": {},
+
+  "mngadrs": "إدارة العناوين",
+  "@mngadrs": {},
+
+  "addnwadrs": "أضف عنوانًا جديدًا",
+  "@addnwadrs": {},
+
+  "mnmlamnt": "الحد الأدنى مبلغ الطلب",
+  "@mnmlamnt": {},
+
+  "edtprfl": "تحرير الملف الشخصي",
+  "@edtprfl": {},
+
+  "frstnm": "الاسم الأول",
+  "@frstnm": {},
+
+  "gndr": "جنس",
+  "@gndr": {},
+
+  "male": "ذكر",
+  "@male": {},
+
+  "female": "أنثى",
+  "@female": {},
+
+  "rmladrs": "عنوان البريد الإلكتروني (اختياري)",
+  "@rmladrs": {},
+
+  "mbl": "متحرك",
+  "@mbl": {},
+
+  "altrntvphn": "هاتف بديل (اختياري)",
+  "@altrntvphn": {},
+
+  "updtaprl": "تحديث الملف الشخصي",
+  "@updtaprl": {},
+
+  "ordronlineviaapp": "اطلب عبر الإنترنت أو عبر تطبيقنا",
+  "@ordronlineviaapp": {},
+
+  "wecvlclctattime": "نجمع في وقت يناسبك ويعمل سحرنا",
+  "@wecvlclctattime": {},
+
+  "wertrnclnclothes": "نعيد ملابسك النظيفة إليك",
+  "@wertrnclnclothes": {},
+
+  "plsslctpckupschdl": "الرجاء تحديد الجدول الزمني لالتقاط أولاً",
+  "@plsslctpckupschdl": {},
+
+  "noslctavlbl": "لا فتحات متاحة",
+  "@noslctavlbl": {},
+
+  "abtus": "معلومات عنا",
+  "@abtus": {},
+
+  "cls": "يغلق",
+  "@cls": {},
+
+  "msgonwhtsap": "أرسل لنا على WhatsApp",
+  "@msgonwhtsap": {},
+
+  "chckout": "الدفع",
+  "@chckout": {},
+
+  "mnmmordramnt": "الحد الأدنى مبلغ الطلب",
+  "@mnmmordramnt": {},
+
+  "schdl": "جدول",
+  "@schdl": {},
+
+  "urabttolgot": "أنت على وشك تسجيل الخروج",
+  "@urabttolgot": {},
+
+  "arusre": "هل أنت متأكد؟",
+  "@arusre": {},
+
+  "y": "نعم",
+  "@y": {},
+
+  "no": "لا",
+  "@no": {},
+
+  "ordrnow": "النظام الآن",
+  "@ordrnow": {},
+
+  "additm": "أضف العنصر",
+  "@additm": {},
+
+  "mycrt": "عربتي",
+  "@mycrt": {},
+
+  "myordr": "طلبي",
+  "@myordr": {},
+
+  "ntfctn": "إشعار",
+  "@ntfctn": {},
+
+  "prfl": "حساب تعريفي",
+  "@prfl": {},
+
+  "item": "غرض",
+  "@item": {},
+
+  "shpngndpymnt": "الشحن والدفع",
+  "@shpngndpymnt": {},
+
+  "shpngschdl": "جدول الشحن",
+  "@shpngschdl": {},
+
+  "pckup": "يلتقط",
+  "@pckup": {},
+
+  "dlvry": "توصيل",
+  "@dlvry": {},
+
+  "adrs": "عنوان",
+  "@adrs": {},
+
+  "chsadrs": "اختر العنوان",
+  "@chsadrs": {},
+
+  "instrctn": "تعليمات",
+  "@instrctn": {},
+
+  "adinstrctnop": "إضافة تعليمات (اختياري)",
+  "@adinstrctnop": {},
+
+  "pymntmthd": "طريقة الدفع",
+  "@pymntmthd": {},
+
+  "cshondlvry": "النقد عند التسليم",
+  "@cshondlvry": {},
+
+  "pywhndlvry": "ادفع عند التوصيل",
+  "@pywhndlvry": {},
+
+  "ttlpybl": "إجمالي الدفع",
+  "@ttlpybl": {},
+
+  "pynw": "تأكيد الأمر",
+  "@pynw": {},
+
+  "plsslctalflds": "الرجاء تحديد جميع الحقول",
+  "@plsslctalflds": {},
+
+  "wrprcsngprvsdlvry": "نحن نعالج طلبك السابق.انتظر من فضلك",
+  "@wrprcsngprvsdlvry": {},
+
+  "ordrplcd": "طلب",
+  "@ordrplcd": {},
+
+  "unslctd": "غير محدد",
+  "@unslctd": {},
+
+  "urordrhsbncnfmrd": "تم تأكيد طلبك",
+  "@urordrhsbncnfmrd": {},
+
+  "urordrhsbnplcd": "لقد كان طلبك",
+  "@urordrhsbnplcd": {},
+
+  "cnfrmd": "مؤكد",
+  "@cnfrmd": {},
+
+  "plcdplsmkpymnttocnfrmit": "وضعت ، يرجى الدفع لتأكيد ذلك",
+  "@plcdplsmkpymnttocnfrmit": {},
+
+  "urordrid": "معرف طلبك",
+  "@urordrid": {},
+
+  "gotohome": "اذهب إلى المنزل",
+  "@gotohome": {},
+
+  "mkpymnt": "قم بالدفع",
+  "@mkpymnt": {},
+
+  "nointrntcnctn": "لا اتصال إنترنت",
+  "@nointrntcnctn": {},
+
+  "odrdtls": "طلب تفاصيل",
+  "@odrdtls": {},
+
+  "itms": "أغراض",
+  "@itms": {},
+
+  "shpngadrs": "عنوان الشحن",
+  "@shpngadrs": {},
+
+  "rcvrpswrd": "استعادة كلمة المرور",
+  "@rcvrpswrd": {},
+
+  "entrpswrdorphn": "أدخل بريدك الإلكتروني أو رقم هاتفك لاستعادة كلمة المرور",
+  "@entrpswrdorphn": {},
+
+  "sndotp": "إرسال OTP",
+  "@sndotp": {},
+
+  "entrotp": "أدخل OTP",
+  "@entrotp": {},
+
+  "ndgtotp": "تم إرسال 4 أرقام OTP إلى بريدك الإلكتروني/هاتفك",
+  "@ndgtotp": {},
+
+  "pswrdupdated": "تم تحديث كلمة المرور بنجاح",
+  "@pswrdupdated": {},
+
+  "plslctanimg": "الرجاء تحديد صورة",
+  "@plslctanimg": {},
+
+  "crpimg": "صورة المحاصيل",
+  "@crpimg": {},
+
+  "upldaprflpht": "تحميل صورة ملف تعريف",
+  "@upldaprflpht": {},
+
+  "skipiwluldltr": "تخطي ، سأقوم بتحميل لاحقًا",
+  "@skipiwluldltr": {},
+
+  "cngrts": "مبروك!",
+  "@cngrts": {},
+
+  "uhvscsflysgndupon": "لقد قمت بالتسجيل بنجاح على",
+  "@uhvscsflysgndupon": {},
+
+  "grt": "عظيم",
+  "@grt": {},
+
+  "srvc": "خدمة",
+  "@srvc": {},
+
+  "lgdot": "تم تسجيلها",
+  "@lgdot": {},
+
+  "odrdsmry": "ملخص الطلب",
+  "@odrdsmry": {},
+
+  "payonlinewithcard": "ادفع عبر الإنترنت باستخدام بطاقتك",
+  "@payonlinewithcard": {},
+
+  "slctvarient": "حدد البديل",
+  "@slctvarient": {},
+
+  "add": "يضيف",
+  "@add": {},
+
+  "stores": "المتاجر",
+  "@stores": {},
+
+  "emailOrPhone": "رقم التليفون",
+  "@emailOrPhone": {},
+
+  "mobileNumber": "الرجاء إدخال رقم هاتفك",
+  "@mobileNumber": {},
+
+  "emailAddress": "الرجاء إدخال عنوان بريدك الإلكتروني",
+  "@emailAddress": {},
+
+  "ordrplcdscsfly": "وضع النظام بنجاح",
+  "@ordrplcdscsfly": {},
+
+  "deleteAccount": "حذف الحساب",
+  "@deleteAccount": {},
+
+  "emailOptional": "البريد الإلكتروني (اختياري)",
+  "@emailOptional": {},
+
+  "iAgreeToThe": "أوافق على",
+  "@iAgreeToThe": {},
+
+  "here": "هنا",
+  "@here": {},
+
+  "viewDetails": "عرض التفاصيل",
+  "@viewDetails": {},
+
+  "cartEmptyError": "عربة فارغة.الرجاء إضافة بعض المنتجات إلى العربة.",
+  "@cartEmptyError": {},
+
+  "checkout": "الدفع",
+  "@checkout": {},
+
+  "off": "عن",
+  "@off": {},
+
+  "home": "بيت",
+  "@home": {},
+
+  "shop": "بالقرب من المتجر",
+  "@shop": {},
+
+  "order": "طلبي",
+  "@order": {},
+
+  "notification": "إشعار",
+  "@notification": {},
+
+  "profile": "حساب تعريفي",
+  "@profile": {},
+
+  "popularService": "خدمة شعبية",
+  "@popularService": {},
+
+  "viewAll": "عرض الكل",
+  "@viewAll": {},
+
+  "location": "موقع",
+  "@location": {},
+
+  "getDirection": "احصل على الاتجاه",
+  "@getDirection": {},
+
+  "openNow": "افتح الآن",
+  "@openNow": {},
+
+  "services": "خدمات",
+  "@services": {},
+
+  "reviews": "المراجعات",
+  "@reviews": {},
+
+  "completed": "مكتمل",
+  "@completed": {},
+
+  "cancelled": "ألغى",
+  "@cancelled": {},
+
+  "cancelOrder": "إلغاء الطلب",
+  "@cancelOrder": {},
+
+  "orderDetails": "طلب تفاصيل",
+  "@orderDetails": {},
+
+  "pending": "قيد الانتظار",
+  "@pending": {},
+
+  "serviceItem": "عنصر الخدمة",
+  "@serviceItem": {},
+
+  "bookingId": "معرف الحجز",
+  "@bookingId": {},
+
+  "pickUpDate": "تاريخ الالتقاط",
+  "@pickUpDate": {},
+
+  "deliveryDate": "تاريخ التسليم او الوصول",
+  "@deliveryDate": {},
+
+  "paymentMethod": "طريقة الدفع",
+  "@paymentMethod": {},
+
+  "totalAmount": "المبلغ الإجمالي",
+  "@totalAmount": {},
+
+  "downloadInvoice": "تنزيل فاتورة",
+  "@downloadInvoice": {},
+
+  "howWasTheService": "كيف كانت الخدمة؟",
+  "@howWasTheService": {},
+
+  "feedbackHelpImprove": "سوف تساعدنا ملاحظاتك على تحسين تجربة الخدمة.",
+  "@feedbackHelpImprove": {},
+
+  "writeYourFeedbackHere": "اكتب ملاحظاتك هنا",
+  "@writeYourFeedbackHere": {},
+
+  "areYouSureCancelOrder": "هل أنت متأكدتريد إلغاء هذا الطلب؟",
+  "@areYouSureCancelOrder": {},
+
+  "myOrderTitle": "طلبي",
+  "@myOrderTitle": {},
+
+  "noOrderFound": "لم يتم العثور على أمر",
+  "@noOrderFound": {},
+
+  "serviceSchedule": "جدول الخدمة",
+  "@serviceSchedule": {},
+
+  "errorText": "خطأ: {error}",
+  "@errorText": {},
+
+  "yourNotSignedIn": "لم يتم تسجيل الدخول. يرجى تسجيل الدخول لعرض طلباتك.",
+  "@yourNotSignedIn": {},
+
+  "enterCouponCode": "أدخل رمز القسيمة",
+  "@enterCouponCode": {},
+
+  "subTotal": "مجموع الفرعية",
+  "@subTotal": {},
+
+  "discount": "تخفيض",
+  "@discount": {},
+
+  "total": "المجموع",
+  "@total": {},
+
+  "deliveryCharge": "رسوم التوصيل",
+  "@deliveryCharge": {},
+
+  "payableAmount": "مبلغ مستحق الدفع",
+  "@payableAmount": {},
+
+  "cashOnDelivery": "النقد عند التسليم",
+  "@cashOnDelivery": {},
+
+  "onlinePayment": "الدفع عبر الإنترنت",
+  "@onlinePayment": {},
+
+  "selectShippingDate": "الرجاء تحديد تاريخ جدول الشحن",
+  "@selectShippingDate": {},
+
+  "selectAddress": "الرجاء تحديد العنوان",
+  "@selectAddress": {},
+
+  "placeOrder": "ترتيب مكان",
+  "@placeOrder": {},
+
+  "bookedSuccessfully": "حجزت بنجاح",
+  "@bookedSuccessfully": {},
+
+  "orderId": "معرف الطلب",
+  "@orderId": {},
+
+  "pickupDate": "تاريخ التقاط",
+  "@pickupDate": {},
+
+  "pickupTime": "وقت التقاط",
+  "@pickupTime": {},
+
+  "viewOrder": "عرض الأمر",
+  "@viewOrder": {},
+
+  "shippingAddress": "عنوان الشحن",
+  "@shippingAddress": {},
+
+  "change": "يتغير",
+  "@change": {},
+
+  "shippingSchedule": "جدول الشحن",
+  "@shippingSchedule": {},
+
+  "selectPickupDateFirst": "الرجاء تحديد تاريخ الالتقاء أولاً",
+  "@selectPickupDateFirst": {},
+
+  "shippingAndPayment": "الشحن والدفع",
+  "@shippingAndPayment": {},
+
+  "aboutUsTitle": "معلومات عنا",
+  "@aboutUsTitle": {},
+
+  "aboutUsPhone": "رقم التليفون",
+  "@aboutUsPhone": {},
+
+  "addAddressTitle": "أضف العنوان",
+  "@addAddressTitle": {},
+
+  "saveButtonText": "يحفظ",
+  "@saveButtonText": {},
+
+  "addressAddedSuccess": "العنوان المضافة بنجاح",
+  "@addressAddedSuccess": {},
+
+  "addressUpdatedSuccess": "عنوان تم تحديثه بنجاح",
+  "@addressUpdatedSuccess": {},
+
+  "addressTagTitle": "علامة العنوان",
+  "@addressTagTitle": {},
+
+  "makeItDefaultAddress": "اجعله العنوان الافتراضي",
+  "@makeItDefaultAddress": {},
+
+  "addressTag": "علامة",
+  "@addressTag": {},
+
+  "work": "عمل",
+  "@work": {},
+
+  "other": "آخر",
+  "@other": {},
+
+  "areaLabel": "منطقة",
+  "@areaLabel": {},
+
+  "flatLabel": "مستوي",
+  "@flatLabel": {},
+
+  "postalLabel": "بريدي",
+  "@postalLabel": {},
+
+  "addressLine1Label": "العنوان سطر 1",
+  "@addressLine1Label": {},
+
+  "addressLine2Label": "خط العنوان 2",
+  "@addressLine2Label": {},
+
+  "manageAddressTitle": "إدارة العنوان",
+  "@manageAddressTitle": {},
+
+  "noAddressAvailable": "لا عنوان متاح",
+  "@noAddressAvailable": {},
+
+  "newAddressButton": "عنوان جديد",
+  "@newAddressButton": {},
+
+  "privacyPolicyTitle": "سياسة الخصوصية",
+  "@privacyPolicyTitle": {},
+
+  "contentUnavailable": "المحتوى غير متوفر",
+  "@contentUnavailable": {},
+
+  "myProfileTitle": "ملفي الشخصي",
+  "@myProfileTitle": {},
+
+  "profileUpdateSuccess": "تم تحديث ملف التعريف بنجاح",
+  "@profileUpdateSuccess": {},
+
+  "profileUpdateFailure": "فشل في تحديث الملف الشخصي",
+  "@profileUpdateFailure": {},
+
+  "updateButtonText": "تحديث",
+  "@updateButtonText": {},
+
+  "nameFieldLabel": "اسم",
+  "@nameFieldLabel": {},
+
+  "genderFieldLabel": "جنس",
+  "@genderFieldLabel": {},
+
+  "emailFieldLabel": "عنوان البريد الإلكتروني (اختياري)",
+  "@emailFieldLabel": {},
+
+  "phoneFieldLabel": "رقم التليفون",
+  "@phoneFieldLabel": {},
+
+  "maleOption": "ذكر",
+  "@maleOption": {},
+
+  "femaleOption": "أنثى",
+  "@femaleOption": {},
+
+  "otherOption": "آخر",
+  "@otherOption": {},
+
+  "termsAndConditionsTitle": "الشروط والأحكام",
+  "@termsAndConditionsTitle": {},
+
+  "manageAddress": "إدارة العنوان",
+  "@manageAddress": {},
+
+  "aboutUs": "معلومات عنا",
+  "@aboutUs": {},
+
+  "logout": "تسجيل الخروج",
+  "@logout": {},
+
+  "product": "منتج",
+  "@product": {},
+
+  "orderOnlineViaApp": "اطلب عبر الإنترنت أو عبر تطبيقنا",
+  "@orderOnlineViaApp": {},
+
+  "weCollectAtTime": "نجمع في وقت يناسبك ويعمل سحرنا",
+  "@weCollectAtTime": {},
+
+  "weReturnCleanClothes": "نعيد ملابسك النظيفة إليك",
+  "@weReturnCleanClothes": {},
+
+  "locationPermissionTitle": "إذن الموقع",
+  "@locationPermissionTitle": {},
+
+  "locationPermissionMessage": "يرجى تمكين موقعك أولا.",
+  "@locationPermissionMessage": {},
+
+  "ok": "نعم",
+  "@ok": {},
+
+  "confirm": "يتأكد",
+  "@confirm": {},
+
+  "submit": "يُقدِّم",
+  "@submit": {},
+
+  "cancel": "يلغي",
+  "@cancel": {},
+
+  "orderSummary": "ملخص الطلب",
+  "@orderSummary": {},
+
+  "addAddress": "أضف العنوان",
+  "@addAddress": {},
+
+  "otpwillbesnd": "سيتم إرسال OTP إلى رقم هاتفك",
+  "@otpwillbesnd": {},
+
+  "rsndotp": "إعادة إرسال OTP",
+  "@rsndotp": {}
+}

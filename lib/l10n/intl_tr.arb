@@ -1,0 +1,912 @@
+{
+  "@@locale": "tr",
+
+  "letsGetStarted": "Başlayalım",
+  "@letsGetStarted": {},
+
+  "eztogetservice": "Hizmet almak kolay!",
+  "@eztogetservice": {},
+
+  "enterphone": "Giriş yapmak için telefon numarasını ve şifreyi girin",
+  "@enterphone": {},
+
+  "entravalidphnnmbr": "Geçerli bir telefon numarası girin",
+  "@entravalidphnnmbr": {},
+
+  "phnvrfctn": "Telefon Doğrulaması",
+  "@phnvrfctn": {},
+
+  "cnfrmotp": "OTP'yi onaylayın",
+  "@cnfrmotp": {},
+
+  "avlblsrvcs": "Mevcut Hizmetler",
+  "@avlblsrvcs": {},
+
+  "nearbystore": "Mağazaya yakın",
+  "@nearbystore": {},
+
+  "searchstore": "Arama Mağazası",
+  "@searchstore": {},
+
+  "filter": "Filtre",
+  "@filter": {},
+
+  "reset": "Sıfırlamak",
+  "@reset": {},
+
+  "mkitdfltadrs": "Varsayılan adresi yap",
+  "@mkitdfltadrs": {},
+
+  "addrsstag": "Adres etiketi",
+  "@addrsstag": {},
+
+  "phnn": "Telefon numarası",
+  "@phnn": {},
+
+  "prcdnxt": "İleride devam edin",
+  "@prcdnxt": {},
+
+  "rvw": "Gözden geçirmek",
+  "@rvw": {},
+
+  "lctn": "Konum",
+  "@lctn": {},
+
+  "getdirection": "Yönlendirmek",
+  "@getdirection": {},
+
+  "dwnldinvoice": "Faturayı İndir",
+  "@dwnldinvoice": {},
+
+  "rusureuwnttocnclthisorder": "Emin misin  Bu siparişi iptal etmek ister misiniz?",
+  "@rusureuwnttocnclthisorder": {},
+
+  "cnclordr": "Siparişi İptal Et",
+  "@cnclordr": {},
+
+  "cllthestore": "Mağaza Çağrı",
+  "@cllthestore": {},
+
+  "clltherider": "Rider'a ara",
+  "@clltherider": {},
+
+  "writeurcmnt": "Bize değerli yorumlarınızı yazın ....",
+  "@writeurcmnt": {},
+
+  "sbmt": "Göndermek",
+  "@sbmt": {},
+
+  "fdbck": "Geri bildirim",
+  "@fdbck": {},
+
+  "cntinue": "Devam etmek",
+  "@cntinue": {},
+
+  "pricingbrkdwn": "Fiyatlandırma Arızası",
+  "@pricingbrkdwn": {},
+
+  "vwdtl": "Ayrıntıları Görüntüle",
+  "@vwdtl": {},
+
+  "onlnpymnt": "Çevrimiçi Ödeme",
+  "@onlnpymnt": {},
+
+  "chng": "Değiştirmek",
+  "@chng": {},
+
+  "chngpswrd": "Şifre değiştir",
+  "@chngpswrd": {},
+
+  "skip": "Atlamak",
+  "@skip": {},
+
+  "myCart": "Sepetim",
+  "@myCart": {},
+
+  "couponCode": "Kupon Kodu",
+  "@couponCode": {},
+
+  "apply": "Uygula",
+  "@apply": {},
+
+  "removeCoupon": "Kuponu Kaldır",
+  "@removeCoupon": {},
+
+  "email": "E -posta",
+  "@email": {},
+
+  "password": "Şifre",
+  "@password": {},
+
+  "forgotPassword": "Parolanızı mı unuttunuz?",
+  "@forgotPassword": {},
+
+  "dontHaveAccount": "Hesabınız yok mu?",
+  "@dontHaveAccount": {},
+
+  "login": "Giriş yapmak",
+  "@login": {},
+
+  "signUp": "Üye olmak",
+  "@signUp": {},
+
+  "acceptTermsAndConditions": "Şartlar ve koşulları kabul etmeniz gerekiyor",
+  "@acceptTermsAndConditions": {},
+
+  "fullName": "Ad Soyad",
+  "@fullName": {},
+
+  "phoneNumber": "Telefon numarası",
+  "@phoneNumber": {},
+
+  "createPassword": "Parola Oluştur",
+  "@createPassword": {},
+
+  "confirmPassword": "Şifreyi onaylayın",
+  "@confirmPassword": {},
+
+  "iAcceptAndAgreeToThe": "Kabul ediyorum ve kabul ediyorum",
+  "@iAcceptAndAgreeToThe": {},
+
+  "termsAndConditions": "Şartlar ve Koşullar",
+  "@termsAndConditions": {},
+
+  "privacyPolicy": "Gizlilik Politikası",
+  "@privacyPolicy": {},
+
+  "okay": "Tamam",
+  "@okay": {},
+
+  "and": "Ve",
+  "@and": {},
+
+  "alreadyHaveAnAccount": "Zaten bir hesabınız var mı?",
+  "@alreadyHaveAnAccount": {},
+
+  "yourntsignedin": "Oturum açmadın!Lütfen önce oturum açın.",
+  "@yourntsignedin": {},
+
+  "myorder": "Siparişlerim",
+  "@myorder": {},
+
+  "hello": "Merhaba",
+  "@hello": {},
+
+  "plslgin": "Lütfen giriş yapın",
+  "@plslgin": {},
+
+  "srvctgrs": "Hizmet Kategorileri",
+  "@srvctgrs": {},
+
+  "ntfctns": "Bildirimler",
+  "@ntfctns": {},
+
+  "nontfctn": "Bildiriminiz boş.",
+  "@nontfctn": {},
+
+  "lginnow": "Şimdi giriş yapın",
+  "@lginnow": {},
+
+  "mngaddrs": "Adresi Yönetin",
+  "@mngaddrs": {},
+
+  "prvcyplcy": "Gizlilik Politikası",
+  "@prvcyplcy": {},
+
+  "trmsofsrvc": "Hizmet Şartları",
+  "@trmsofsrvc": {},
+
+  "cntctus": "Bize Ulaşın",
+  "@cntctus": {},
+
+  "abt": "Hakkında",
+  "@abt": {},
+
+  "lgout": "Çıkış yapmak",
+  "@lgout": {},
+
+  "edt": "Düzenlemek",
+  "@edt": {},
+
+  "noitmcrt": "Sepette öğe yok",
+  "@noitmcrt": {},
+
+  "nosrvcavlbl": "Hizmet yok",
+  "@nosrvcavlbl": {},
+
+  "noordrfnd": "Sipariş bulunamadı",
+  "@noordrfnd": {},
+
+  "actvordr": "Aktif sipariş",
+  "@actvordr": {},
+
+  "vewall": "Hepsini görüntüle",
+  "@vewall": {},
+
+  "ordrid": "Sipariş kimliği",
+  "@ordrid": {},
+
+  "pickupat": "Alev almak",
+  "@pickupat": {},
+
+  "dlvryat": "Teslimat",
+  "@dlvryat": {},
+
+  "ordrstats": "Sipariş Durumu",
+  "@ordrstats": {},
+
+  "pymntstats": "Ödeme durumu",
+  "@pymntstats": {},
+
+  "sbttl": "Alt Toplam",
+  "@sbttl": {},
+
+  "dlvrychrg": "Teslimat",
+  "@dlvrychrg": {},
+
+  "dscnt": "İndirim",
+  "@dscnt": {},
+
+  "ttl": "Toplam",
+  "@ttl": {},
+
+  "dlvrd": "Teslim edilmiş",
+  "@dlvrd": {},
+
+  "rateurexprnc": "Deneyiminizi Değerlendirin",
+  "@rateurexprnc": {},
+
+  "date": "Tarih",
+  "@date": {},
+
+  "dlvryoptn": "Teslimat seçeneği",
+  "@dlvryoptn": {},
+
+  "pyblamnt": "Ödenebilir tutar",
+  "@pyblamnt": {},
+
+  "status": "Durum",
+  "@status": {},
+
+  "pickedYourOrder": "Pickedyourderorder",
+  "@pickedYourOrder": {},
+
+  "surewnttocnclordr": "Emin misinBu siparişi iptal etmek ister misiniz?",
+  "@surewnttocnclordr": {},
+
+  "cncl": "İptal etmek",
+  "@cncl": {},
+
+  "cnfirm": "Onaylamak",
+  "@cnfirm": {},
+
+  "howwasironsrvc": "Ütüleme hizmeti nasıldı?",
+  "@howwasironsrvc": {},
+
+  "urfdbckwillhlp": "Geri bildiriminiz demir hizmet deneyimini geliştirmemize yardımcı olacaktır.",
+  "@urfdbckwillhlp": {},
+
+  "addadrs": "Adres ekle",
+  "@addadrs": {},
+
+  "updtadrs": "Güncelleme adresi",
+  "@updtadrs": {},
+
+  "adrsname": "Adres Adı (Örn: ofis/ev/vb.)",
+  "@adrsname": {},
+
+  "areaex": "Alan (Örn: Bashundhara)",
+  "@areaex": {},
+
+  "flat": "Düz",
+  "@flat": {},
+
+  "houseno": "Ev No#",
+  "@houseno": {},
+
+  "postcode": "Posta Kod",
+  "@postcode": {},
+
+  "adrsline": "Adres hattı",
+  "@adrsline": {},
+
+  "adrsline_two": "Adres Çizgisi 2",
+  "@adrsline_two": {},
+
+  "scs": "Başarı",
+  "@scs": {},
+
+  "mngadrs": "Adresleri Yönetin",
+  "@mngadrs": {},
+
+  "addnwadrs": "Yeni adres ekle",
+  "@addnwadrs": {},
+
+  "mnmlamnt": "Minimum Sipariş Tutarı",
+  "@mnmlamnt": {},
+
+  "edtprfl": "Profili Düzenle",
+  "@edtprfl": {},
+
+  "frstnm": "İlk adı",
+  "@frstnm": {},
+
+  "gndr": "Cinsiyet",
+  "@gndr": {},
+
+  "male": "Erkek",
+  "@male": {},
+
+  "female": "Dişi",
+  "@female": {},
+
+  "rmladrs": "E -posta adresi (isteğe bağlı)",
+  "@rmladrs": {},
+
+  "mbl": "Hareketli",
+  "@mbl": {},
+
+  "altrntvphn": "Alternatif telefon (isteğe bağlı)",
+  "@altrntvphn": {},
+
+  "updtaprl": "Profili Güncelle",
+  "@updtaprl": {},
+
+  "ordronlineviaapp": "Çevrimiçi veya uygulamamız aracılığıyla sipariş ver",
+  "@ordronlineviaapp": {},
+
+  "wecvlclctattime": "Size uygun bir zamanda topluyoruz ve sihrimizi çalıştırıyoruz",
+  "@wecvlclctattime": {},
+
+  "wertrnclnclothes": "Temiz kıyafetlerinizi size geri döndürüyoruz",
+  "@wertrnclnclothes": {},
+
+  "plsslctpckupschdl": "Lütfen Önce Çizelgeyi Alın",
+  "@plsslctpckupschdl": {},
+
+  "noslctavlbl": "Yuva yok",
+  "@noslctavlbl": {},
+
+  "abtus": "Hakkımızda",
+  "@abtus": {},
+
+  "cls": "Kapalı",
+  "@cls": {},
+
+  "msgonwhtsap": "WhatsApp'ta bize mesaj at",
+  "@msgonwhtsap": {},
+
+  "chckout": "Çıkış yapmak",
+  "@chckout": {},
+
+  "mnmmordramnt": "Minimum Sipariş Tutarı",
+  "@mnmmordramnt": {},
+
+  "schdl": "Takvim",
+  "@schdl": {},
+
+  "urabttolgot": "Oturum açmak üzeresin",
+  "@urabttolgot": {},
+
+  "arusre": "Emin misin?",
+  "@arusre": {},
+
+  "y": "Evet",
+  "@y": {},
+
+  "no": "HAYIR",
+  "@no": {},
+
+  "ordrnow": "Şimdi sipariş ver",
+  "@ordrnow": {},
+
+  "additm": "Öğe Ekle",
+  "@additm": {},
+
+  "mycrt": "Sepetim",
+  "@mycrt": {},
+
+  "myordr": "Benim Siparişim",
+  "@myordr": {},
+
+  "ntfctn": "Bildiri",
+  "@ntfctn": {},
+
+  "prfl": "Profil",
+  "@prfl": {},
+
+  "item": "öğe",
+  "@item": {},
+
+  "shpngndpymnt": "Nakliye ve Ödeme",
+  "@shpngndpymnt": {},
+
+  "shpngschdl": "Gönderi Programı",
+  "@shpngschdl": {},
+
+  "pckup": "Toplamak",
+  "@pckup": {},
+
+  "dlvry": "Teslimat",
+  "@dlvry": {},
+
+  "adrs": "Adres",
+  "@adrs": {},
+
+  "chsadrs": "Adres'i seçin",
+  "@chsadrs": {},
+
+  "instrctn": "Talimat",
+  "@instrctn": {},
+
+  "adinstrctnop": "Talimat ekle (isteğe bağlı)",
+  "@adinstrctnop": {},
+
+  "pymntmthd": "Ödeme yöntemi",
+  "@pymntmthd": {},
+
+  "cshondlvry": "Teslimatta Nakit",
+  "@cshondlvry": {},
+
+  "pywhndlvry": "Teslimat alırken ödeme",
+  "@pywhndlvry": {},
+
+  "ttlpybl": "Toplam ödenecek",
+  "@ttlpybl": {},
+
+  "pynw": "Sipariş onaylayın",
+  "@pynw": {},
+
+  "plsslctalflds": "Lütfen tüm alanları seçin",
+  "@plsslctalflds": {},
+
+  "wrprcsngprvsdlvry": "Önceki isteğinizi işliyoruz.Lütfen bekleyin",
+  "@wrprcsngprvsdlvry": {},
+
+  "ordrplcd": "Sipariş verildi",
+  "@ordrplcd": {},
+
+  "unslctd": "Seçilmemiş",
+  "@unslctd": {},
+
+  "urordrhsbncnfmrd": "Siparişiniz onaylandı",
+  "@urordrhsbncnfmrd": {},
+
+  "urordrhsbnplcd": "Siparişin",
+  "@urordrhsbnplcd": {},
+
+  "cnfrmd": "Onaylanmış",
+  "@cnfrmd": {},
+
+  "plcdplsmkpymnttocnfrmit": "Yerleştirin, lütfen onaylamak için ödeme yapın",
+  "@plcdplsmkpymnttocnfrmit": {},
+
+  "urordrid": "Sipariş Kimliğiniz",
+  "@urordrid": {},
+
+  "gotohome": "Eve Git",
+  "@gotohome": {},
+
+  "mkpymnt": "Ödeme yapmak",
+  "@mkpymnt": {},
+
+  "nointrntcnctn": "İnternet bağlantısı yok",
+  "@nointrntcnctn": {},
+
+  "odrdtls": "Sipariş Ayrıntıları",
+  "@odrdtls": {},
+
+  "itms": "Öğeler",
+  "@itms": {},
+
+  "shpngadrs": "Gönderi Adresi",
+  "@shpngadrs": {},
+
+  "rcvrpswrd": "Parolayı kurtar",
+  "@rcvrpswrd": {},
+
+  "entrpswrdorphn": "Parolayı kurtarmak için e -postanızı veya telefon numaranızı girin",
+  "@entrpswrdorphn": {},
+
+  "sndotp": "OTP gönder",
+  "@sndotp": {},
+
+  "entrotp": "OTP girin",
+  "@entrotp": {},
+
+  "ndgtotp": "E -postanıza/telefonunuza 4 haneli OTP gönderildi",
+  "@ndgtotp": {},
+
+  "pswrdupdated": "Parola başarıyla güncellendi",
+  "@pswrdupdated": {},
+
+  "plslctanimg": "Lütfen bir resim seçin",
+  "@plslctanimg": {},
+
+  "crpimg": "Mahsul görüntüsü",
+  "@crpimg": {},
+
+  "upldaprflpht": "Bir profil fotoğrafı yükleyin",
+  "@upldaprflpht": {},
+
+  "skipiwluldltr": "Atla, daha sonra yükleyeceğim",
+  "@skipiwluldltr": {},
+
+  "cngrts": "Tebrikler!",
+  "@cngrts": {},
+
+  "uhvscsflysgndupon": "Başarıyla kaydoldun",
+  "@uhvscsflysgndupon": {},
+
+  "grt": "Harika",
+  "@grt": {},
+
+  "srvc": "Hizmet vermek",
+  "@srvc": {},
+
+  "lgdot": "Oturum açmış",
+  "@lgdot": {},
+
+  "odrdsmry": "Sipariş Özeti",
+  "@odrdsmry": {},
+
+  "payonlinewithcard": "Kartınızla çevrimiçi ödeme yapın",
+  "@payonlinewithcard": {},
+
+  "slctvarient": "Varyant'ı seçin",
+  "@slctvarient": {},
+
+  "add": "Eklemek",
+  "@add": {},
+
+  "stores": "Mağazalar",
+  "@stores": {},
+
+  "emailOrPhone": "Telefon numarası",
+  "@emailOrPhone": {},
+
+  "mobileNumber": "Lütfen telefon numaranızı girin",
+  "@mobileNumber": {},
+
+  "emailAddress": "Lütfen e -posta adresinizi girin",
+  "@emailAddress": {},
+
+  "ordrplcdscsfly": "Sipariş başarıyla yerleştirildi",
+  "@ordrplcdscsfly": {},
+
+  "deleteAccount": "Hesabı Sil",
+  "@deleteAccount": {},
+
+  "emailOptional": "E -posta (isteğe bağlı)",
+  "@emailOptional": {},
+
+  "iAgreeToThe": "Kabul ediyorum",
+  "@iAgreeToThe": {},
+
+  "here": "Burada",
+  "@here": {},
+
+  "viewDetails": "Ayrıntıları Görüntüle",
+  "@viewDetails": {},
+
+  "cartEmptyError": "Sepet boş.Lütfen sepete bazı ürünler ekleyin.",
+  "@cartEmptyError": {},
+
+  "checkout": "Çıkış yapmak",
+  "@checkout": {},
+
+  "off": "KAPALI",
+  "@off": {},
+
+  "home": "Ev",
+  "@home": {},
+
+  "shop": "Mağazaya yakın",
+  "@shop": {},
+
+  "order": "Benim Siparişim",
+  "@order": {},
+
+  "notification": "Bildiri",
+  "@notification": {},
+
+  "profile": "Profil",
+  "@profile": {},
+
+  "popularService": "Popüler Hizmet",
+  "@popularService": {},
+
+  "viewAll": "Hepsini görüntüle",
+  "@viewAll": {},
+
+  "location": "Konum",
+  "@location": {},
+
+  "getDirection": "Yönlendirmek",
+  "@getDirection": {},
+
+  "openNow": "Şimdi aç",
+  "@openNow": {},
+
+  "services": "Hizmet",
+  "@services": {},
+
+  "reviews": "İncelemeler",
+  "@reviews": {},
+
+  "completed": "Tamamlanmış",
+  "@completed": {},
+
+  "cancelled": "İptal edilmiş",
+  "@cancelled": {},
+
+  "cancelOrder": "Siparişi İptal Et",
+  "@cancelOrder": {},
+
+  "orderDetails": "Sipariş Detayları",
+  "@orderDetails": {},
+
+  "pending": "Askıda olması",
+  "@pending": {},
+
+  "serviceItem": "Hizmet öğesi",
+  "@serviceItem": {},
+
+  "bookingId": "Rezervasyon kimliği",
+  "@bookingId": {},
+
+  "pickUpDate": "Pikap tarihi",
+  "@pickUpDate": {},
+
+  "deliveryDate": "Teslimat tarihi",
+  "@deliveryDate": {},
+
+  "paymentMethod": "Ödeme yöntemi",
+  "@paymentMethod": {},
+
+  "totalAmount": "Toplam tutar",
+  "@totalAmount": {},
+
+  "downloadInvoice": "Faturayı İndir",
+  "@downloadInvoice": {},
+
+  "howWasTheService": "Hizmet nasıldı?",
+  "@howWasTheService": {},
+
+  "feedbackHelpImprove": "Geri bildiriminiz hizmet deneyimini geliştirmemize yardımcı olacaktır.",
+  "@feedbackHelpImprove": {},
+
+  "writeYourFeedbackHere": "Geri bildiriminizi buraya yazın",
+  "@writeYourFeedbackHere": {},
+
+  "areYouSureCancelOrder": "Emin misinBu siparişi iptal etmek ister misiniz?",
+  "@areYouSureCancelOrder": {},
+
+  "myOrderTitle": "Benim Siparişim",
+  "@myOrderTitle": {},
+
+  "noOrderFound": "Sipariş bulunamadı",
+  "@noOrderFound": {},
+
+  "serviceSchedule": "Hizmet programı",
+  "@serviceSchedule": {},
+
+  "errorText": "Hata: {hata}",
+  "@errorText": {},
+
+  "yourNotSignedIn": "Oturum açmazsınız. Siparişlerinizi görüntülemek için lütfen giriş yapın.",
+  "@yourNotSignedIn": {},
+
+  "enterCouponCode": "Kupon Kodunu Girin",
+  "@enterCouponCode": {},
+
+  "subTotal": "Alt Toplam",
+  "@subTotal": {},
+
+  "discount": "İndirim",
+  "@discount": {},
+
+  "total": "Toplam",
+  "@total": {},
+
+  "deliveryCharge": "Teslimat",
+  "@deliveryCharge": {},
+
+  "payableAmount": "Ödenebilir tutar",
+  "@payableAmount": {},
+
+  "cashOnDelivery": "Teslimatta Nakit",
+  "@cashOnDelivery": {},
+
+  "onlinePayment": "Çevrimiçi Ödeme",
+  "@onlinePayment": {},
+
+  "selectShippingDate": "Lütfen gönderim programı tarihini seçin",
+  "@selectShippingDate": {},
+
+  "selectAddress": "Lütfen Adres'i seçin",
+  "@selectAddress": {},
+
+  "placeOrder": "Emir",
+  "@placeOrder": {},
+
+  "bookedSuccessfully": "Başarıyla rezerve edildi",
+  "@bookedSuccessfully": {},
+
+  "orderId": "Sipariş kimliği",
+  "@orderId": {},
+
+  "pickupDate": "Pikap tarihi",
+  "@pickupDate": {},
+
+  "pickupTime": "Pikap zamanı",
+  "@pickupTime": {},
+
+  "viewOrder": "Siparişi Görüntüle",
+  "@viewOrder": {},
+
+  "shippingAddress": "Gönderi Adresi",
+  "@shippingAddress": {},
+
+  "change": "Değiştirmek",
+  "@change": {},
+
+  "shippingSchedule": "Gönderi Programı",
+  "@shippingSchedule": {},
+
+  "selectPickupDateFirst": "Lütfen önce pikap tarihini seçin",
+  "@selectPickupDateFirst": {},
+
+  "shippingAndPayment": "Nakliye ve Ödeme",
+  "@shippingAndPayment": {},
+
+  "aboutUsTitle": "Hakkımızda",
+  "@aboutUsTitle": {},
+
+  "aboutUsPhone": "Telefon numarası",
+  "@aboutUsPhone": {},
+
+  "addAddressTitle": "Adres ekle",
+  "@addAddressTitle": {},
+
+  "saveButtonText": "Kaydetmek",
+  "@saveButtonText": {},
+
+  "addressAddedSuccess": "Adres başarıyla eklendi",
+  "@addressAddedSuccess": {},
+
+  "addressUpdatedSuccess": "Adres başarıyla güncellendi",
+  "@addressUpdatedSuccess": {},
+
+  "addressTagTitle": "Adres etiketi",
+  "@addressTagTitle": {},
+
+  "makeItDefaultAddress": "Varsayılan adresi yap",
+  "@makeItDefaultAddress": {},
+
+  "addressTag": "Etiket",
+  "@addressTag": {},
+
+  "work": "İş",
+  "@work": {},
+
+  "other": "Diğer",
+  "@other": {},
+
+  "areaLabel": "Alan",
+  "@areaLabel": {},
+
+  "flatLabel": "Düz",
+  "@flatLabel": {},
+
+  "postalLabel": "Posta",
+  "@postalLabel": {},
+
+  "addressLine1Label": "Adres satırı 1",
+  "@addressLine1Label": {},
+
+  "addressLine2Label": "Adres Çizgisi 2",
+  "@addressLine2Label": {},
+
+  "manageAddressTitle": "Adresi Yönetin",
+  "@manageAddressTitle": {},
+
+  "noAddressAvailable": "Adres yok",
+  "@noAddressAvailable": {},
+
+  "newAddressButton": "Yeni adres",
+  "@newAddressButton": {},
+
+  "privacyPolicyTitle": "Gizlilik Politikası",
+  "@privacyPolicyTitle": {},
+
+  "contentUnavailable": "İçerik mevcut değil",
+  "@contentUnavailable": {},
+
+  "myProfileTitle": "Profilim",
+  "@myProfileTitle": {},
+
+  "profileUpdateSuccess": "Profil başarıyla güncellendi",
+  "@profileUpdateSuccess": {},
+
+  "profileUpdateFailure": "Profili güncelleyemedi",
+  "@profileUpdateFailure": {},
+
+  "updateButtonText": "Güncelleme",
+  "@updateButtonText": {},
+
+  "nameFieldLabel": "İsim",
+  "@nameFieldLabel": {},
+
+  "genderFieldLabel": "Cinsiyet",
+  "@genderFieldLabel": {},
+
+  "emailFieldLabel": "E -posta adresi (isteğe bağlı)",
+  "@emailFieldLabel": {},
+
+  "phoneFieldLabel": "Telefon numarası",
+  "@phoneFieldLabel": {},
+
+  "maleOption": "Erkek",
+  "@maleOption": {},
+
+  "femaleOption": "Dişi",
+  "@femaleOption": {},
+
+  "otherOption": "Diğer",
+  "@otherOption": {},
+
+  "termsAndConditionsTitle": "Şartlar ve koşullar",
+  "@termsAndConditionsTitle": {},
+
+  "manageAddress": "Adresi Yönetin",
+  "@manageAddress": {},
+
+  "aboutUs": "Hakkımızda",
+  "@aboutUs": {},
+
+  "logout": "Oturum açma",
+  "@logout": {},
+
+  "product": "Ürün",
+  "@product": {},
+
+  "orderOnlineViaApp": "Çevrimiçi veya uygulamamız aracılığıyla sipariş ver",
+  "@orderOnlineViaApp": {},
+
+  "weCollectAtTime": "Size uygun bir zamanda topluyoruz ve sihrimizi çalıştırıyoruz",
+  "@weCollectAtTime": {},
+
+  "weReturnCleanClothes": "Temiz kıyafetlerinizi size geri döndürüyoruz",
+  "@weReturnCleanClothes": {},
+
+  "locationPermissionTitle": "Konum izni",
+  "@locationPermissionTitle": {},
+
+  "locationPermissionMessage": "Lütfen önce konumunuzu etkinleştirin.",
+  "@locationPermissionMessage": {},
+
+  "ok": "TAMAM",
+  "@ok": {},
+
+  "confirm": "Onaylamak",
+  "@confirm": {},
+
+  "submit": "Göndermek",
+  "@submit": {},
+
+  "cancel": "İptal etmek",
+  "@cancel": {},
+
+  "orderSummary": "Sipariş Özeti",
+  "@orderSummary": {},
+
+  "addAddress": "Adres ekle",
+  "@addAddress": {},
+
+  "otpwillbesnd": "Telefon numaranıza bir OTP gönderilecek",
+  "@otpwillbesnd": {},
+
+  "rsndotp": "OTP'yi yeniden yap",
+  "@rsndotp": {}
+}

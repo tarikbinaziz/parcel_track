@@ -1,0 +1,39 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:laundrymart_flutter/controllers/misc/misc_provider.dart';
+import 'package:laundrymart_flutter/views/dashboard/components/bottom_nav_bar.dart';
+import 'package:laundrymart_flutter/views/dashboard/home_screen/home_screen.dart';
+import 'package:laundrymart_flutter/views/dashboard/nearby_store/near_by_store.dart';
+import 'package:laundrymart_flutter/views/dashboard/notificaton_screen/notification_screen.dart';
+import 'package:laundrymart_flutter/views/dashboard/order_screen/my_order_screen.dart';
+import 'package:laundrymart_flutter/views/dashboard/profile_screen/profile_screen.dart';
+
+class DashBoardScreen extends ConsumerWidget {
+  const DashBoardScreen({super.key});
+  Widget _getChild(int selectedIndex) {
+    switch (selectedIndex) {
+      case 0:
+        return const HomeScreen();
+      case 1:
+        return const NearbyStoreScreen();
+      case 2:
+        return const MyOrderScreen();
+      case 3:
+        return const NotificationScreen();
+      case 4:
+        return const ProfileScreen();
+      default:
+        return const SizedBox.shrink();
+    }
+  }
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final selectedIndex = ref.watch(homeScreenIndexProvider);
+    return Scaffold(
+      extendBody: true,
+      body: _getChild(selectedIndex),
+      bottomNavigationBar: BottomNavBar(),
+    );
+  }
+}
