@@ -63,7 +63,7 @@ class OnBoardingScreen extends ConsumerWidget {
                   text: S.of(context).letsGetStarted,
                   onPressed: () {
                     context.nav.pushNamedAndRemoveUntil(
-                      Routes.dashboardScreen,
+                      Routes.login,
                       (route) => false,
                     );
                   }),
