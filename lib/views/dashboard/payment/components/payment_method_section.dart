@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:laundrymart_flutter/config/app_color.dart';
-import 'package:laundrymart_flutter/config/app_text.dart';
-import 'package:laundrymart_flutter/controllers/misc/enums.dart';
-import 'package:laundrymart_flutter/controllers/misc/misc_provider.dart';
-import 'package:laundrymart_flutter/generated/l10n.dart';
-import 'package:laundrymart_flutter/utils/extensions.dart';
+import 'package:parcel_track/config/app_color.dart';
+import 'package:parcel_track/config/app_text.dart';
+import 'package:parcel_track/controllers/misc/enums.dart';
+import 'package:parcel_track/controllers/misc/misc_provider.dart';
+import 'package:parcel_track/generated/l10n.dart';
+import 'package:parcel_track/utils/extensions.dart';
 
 class PaymentMethodSection extends ConsumerWidget {
   const PaymentMethodSection({super.key});
@@ -22,7 +22,7 @@ class PaymentMethodSection extends ConsumerWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            S.of(context).paymentMethod, 
+            S.of(context).paymentMethod,
             style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.w600),
           ),
           10.ph,

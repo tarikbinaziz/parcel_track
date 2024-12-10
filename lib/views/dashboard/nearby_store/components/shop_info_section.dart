@@ -1,12 +1,12 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:laundrymart_flutter/config/app_color.dart';
-import 'package:laundrymart_flutter/config/app_text.dart';
-import 'package:laundrymart_flutter/generated/l10n.dart';
-import 'package:laundrymart_flutter/models/store_model/address.dart';
-import 'package:laundrymart_flutter/models/store_model/store_model.dart';
-import 'package:laundrymart_flutter/utils/extensions.dart';
+import 'package:parcel_track/config/app_color.dart';
+import 'package:parcel_track/config/app_text.dart';
+import 'package:parcel_track/generated/l10n.dart';
+import 'package:parcel_track/models/store_model/address.dart';
+import 'package:parcel_track/models/store_model/store_model.dart';
+import 'package:parcel_track/utils/extensions.dart';
 
 class ShopInfoSection extends StatelessWidget {
   const ShopInfoSection({

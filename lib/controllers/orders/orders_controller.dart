@@ -1,9 +1,9 @@
-import 'package:laundrymart_flutter/controllers/cart_controller/cart_controller.dart';
-import 'package:laundrymart_flutter/controllers/misc/misc_provider.dart';
-import 'package:laundrymart_flutter/models/order_model/order_model.dart';
-import 'package:laundrymart_flutter/services/order_service.dart';
+import 'package:parcel_track/controllers/cart_controller/cart_controller.dart';
+import 'package:parcel_track/controllers/misc/misc_provider.dart';
+import 'package:parcel_track/models/order_model/order_model.dart';
+import 'package:parcel_track/services/order_service.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
-import 'package:laundrymart_flutter/models/order_model/order.dart';
+import 'package:parcel_track/models/order_model/order.dart';
 part 'orders_controller.g.dart';
 
 @riverpod

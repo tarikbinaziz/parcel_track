@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:laundrymart_flutter/models/store_model/store_model.dart';
-import 'package:laundrymart_flutter/utils/extensions.dart';
-import 'package:laundrymart_flutter/views/dashboard/nearby_store/components/shop_info_section.dart';
-import 'package:laundrymart_flutter/views/dashboard/nearby_store/components/shop_services_section.dart';
+import 'package:parcel_track/models/store_model/store_model.dart';
+import 'package:parcel_track/utils/extensions.dart';
+import 'package:parcel_track/views/dashboard/nearby_store/components/shop_info_section.dart';
+import 'package:parcel_track/views/dashboard/nearby_store/components/shop_services_section.dart';
 
 class StoreDetails extends StatelessWidget {
   const StoreDetails({super.key, required this.storeModel});

@@ -4,12 +4,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:laundrymart_flutter/config/app_color.dart';
-import 'package:laundrymart_flutter/config/app_text.dart';
-import 'package:laundrymart_flutter/generated/l10n.dart';
-import 'package:laundrymart_flutter/models/store_model/store_model.dart';
-import 'package:laundrymart_flutter/utils/extensions.dart';
-import 'package:laundrymart_flutter/views/dashboard/nearby_store/components/map_view.dart';
+import 'package:parcel_track/config/app_color.dart';
+import 'package:parcel_track/config/app_text.dart';
+import 'package:parcel_track/generated/l10n.dart';
+import 'package:parcel_track/models/store_model/store_model.dart';
+import 'package:parcel_track/utils/extensions.dart';
+import 'package:parcel_track/views/dashboard/nearby_store/components/map_view.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
 class AboutTab extends ConsumerStatefulWidget {

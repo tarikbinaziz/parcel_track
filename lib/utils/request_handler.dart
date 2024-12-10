@@ -1,8 +1,8 @@
 import 'package:dio/dio.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:laundrymart_flutter/config/app_constants.dart';
-import 'package:laundrymart_flutter/routes.dart';
-import 'package:laundrymart_flutter/utils/globalFunction.dart';
+import 'package:parcel_track/config/app_constants.dart';
+import 'package:parcel_track/routes.dart';
+import 'package:parcel_track/utils/globalFunction.dart';
 import 'package:pretty_dio_logger/pretty_dio_logger.dart';
 
 void addApiInterceptors(Dio dio) {

@@ -3,16 +3,16 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:laundrymart_flutter/components/common_appBar.dart';
-import 'package:laundrymart_flutter/config/app_color.dart';
-import 'package:laundrymart_flutter/config/app_constants.dart';
-import 'package:laundrymart_flutter/config/app_text.dart';
-import 'package:laundrymart_flutter/controllers/others_controller/others_controller.dart';
-import 'package:laundrymart_flutter/generated/l10n.dart';
-import 'package:laundrymart_flutter/models/others.dart';
-import 'package:laundrymart_flutter/models/store_model/address.dart';
-import 'package:laundrymart_flutter/routes.dart';
-import 'package:laundrymart_flutter/utils/extensions.dart';
+import 'package:parcel_track/components/common_appBar.dart';
+import 'package:parcel_track/config/app_color.dart';
+import 'package:parcel_track/config/app_constants.dart';
+import 'package:parcel_track/config/app_text.dart';
+import 'package:parcel_track/controllers/others_controller/others_controller.dart';
+import 'package:parcel_track/generated/l10n.dart';
+import 'package:parcel_track/models/others.dart';
+import 'package:parcel_track/models/store_model/address.dart';
+import 'package:parcel_track/routes.dart';
+import 'package:parcel_track/utils/extensions.dart';
 
 class ManageAddressScreen extends ConsumerWidget {
   const ManageAddressScreen({super.key});

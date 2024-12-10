@@ -1,7 +1,7 @@
 import 'dart:io';
 import 'package:dio/dio.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:laundrymart_flutter/utils/request_handler.dart';
+import 'package:parcel_track/utils/request_handler.dart';
 
 final apiClientProvider = Provider((ref) => ApiClient());
 

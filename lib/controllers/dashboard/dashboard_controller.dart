@@ -1,14 +1,14 @@
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:laundrymart_flutter/config/app_constants.dart';
-import 'package:laundrymart_flutter/controllers/misc/misc_provider.dart';
-import 'package:laundrymart_flutter/models/all_ratinngs_model/all_ratinngs_model.dart';
-import 'package:laundrymart_flutter/models/others.dart';
-import 'package:laundrymart_flutter/models/product_model/product_model.dart';
-import 'package:laundrymart_flutter/models/promotions_model/promotions_model.dart';
-import 'package:laundrymart_flutter/models/service_model.dart';
-import 'package:laundrymart_flutter/models/store_model/store_model.dart';
-import 'package:laundrymart_flutter/models/variant_model.dart';
-import 'package:laundrymart_flutter/services/dashboard_service.dart';
+import 'package:parcel_track/config/app_constants.dart';
+import 'package:parcel_track/controllers/misc/misc_provider.dart';
+import 'package:parcel_track/models/all_ratinngs_model/all_ratinngs_model.dart';
+import 'package:parcel_track/models/others.dart';
+import 'package:parcel_track/models/product_model/product_model.dart';
+import 'package:parcel_track/models/promotions_model/promotions_model.dart';
+import 'package:parcel_track/models/service_model.dart';
+import 'package:parcel_track/models/store_model/store_model.dart';
+import 'package:parcel_track/models/variant_model.dart';
+import 'package:parcel_track/services/dashboard_service.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'dashboard_controller.g.dart';

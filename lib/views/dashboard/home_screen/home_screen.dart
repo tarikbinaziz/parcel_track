@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:laundrymart_flutter/config/app_constants.dart';
-import 'package:laundrymart_flutter/controllers/app_settings_provider.dart';
-import 'package:laundrymart_flutter/utils/extensions.dart';
-import 'package:laundrymart_flutter/views/dashboard/home_screen/components/banner_section.dart';
-import 'package:laundrymart_flutter/views/dashboard/home_screen/components/home_appBar.dart';
-import 'package:laundrymart_flutter/views/dashboard/home_screen/components/service_section.dart';
+import 'package:parcel_track/config/app_constants.dart';
+import 'package:parcel_track/controllers/app_settings_provider.dart';
+import 'package:parcel_track/utils/extensions.dart';
+import 'package:parcel_track/views/dashboard/home_screen/components/banner_section.dart';
+import 'package:parcel_track/views/dashboard/home_screen/components/home_appBar.dart';
+import 'package:parcel_track/views/dashboard/home_screen/components/service_section.dart';
 import 'package:location/location.dart';
 
 class HomeScreen extends ConsumerStatefulWidget {

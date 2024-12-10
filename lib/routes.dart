@@ -1,26 +1,26 @@
 import 'package:flutter/material.dart';
-import 'package:laundrymart_flutter/models/order_model/order.dart';
-import 'package:laundrymart_flutter/models/others.dart';
-import 'package:laundrymart_flutter/models/store_model/store_model.dart';
-import 'package:laundrymart_flutter/views/auth/components/phone_verification.dart';
-import 'package:laundrymart_flutter/views/auth/login_screen.dart';
-import 'package:laundrymart_flutter/views/auth/signup_screen.dart';
-import 'package:laundrymart_flutter/views/cart/my_cart_screen.dart';
-import 'package:laundrymart_flutter/views/dashboard/dashboard_screen.dart';
-import 'package:laundrymart_flutter/views/dashboard/nearby_store/store_details.dart';
-import 'package:laundrymart_flutter/views/dashboard/order_screen/components/order_details.dart';
-import 'package:laundrymart_flutter/views/dashboard/payment/shipping_and_payment.dart';
-import 'package:laundrymart_flutter/views/dashboard/profile_screen/components/about_us.dart';
-import 'package:laundrymart_flutter/views/dashboard/profile_screen/components/add_or_edit_address.dart';
-import 'package:laundrymart_flutter/views/dashboard/profile_screen/components/manage_address.dart';
-import 'package:laundrymart_flutter/views/dashboard/profile_screen/components/privacy_and_policy.dart';
-import 'package:laundrymart_flutter/views/dashboard/profile_screen/components/profile_update.dart';
-import 'package:laundrymart_flutter/views/dashboard/profile_screen/components/terms_and_conditions.dart';
-import 'package:laundrymart_flutter/views/dashboard/service_screen/components/service_based_stores.dart';
-import 'package:laundrymart_flutter/views/dashboard/service_screen/product_screen.dart';
-import 'package:laundrymart_flutter/views/splash_screen/on_boarding.dart';
-import 'package:laundrymart_flutter/views/splash_screen/splash_screen.dart';
 import 'package:page_transition/page_transition.dart';
+import 'package:parcel_track/models/order_model/order.dart';
+import 'package:parcel_track/models/others.dart';
+import 'package:parcel_track/models/store_model/store_model.dart';
+import 'package:parcel_track/views/auth/components/phone_verification.dart';
+import 'package:parcel_track/views/auth/login_screen.dart';
+import 'package:parcel_track/views/auth/signup_screen.dart';
+import 'package:parcel_track/views/cart/my_cart_screen.dart';
+import 'package:parcel_track/views/dashboard/dashboard_screen.dart';
+import 'package:parcel_track/views/dashboard/nearby_store/store_details.dart';
+import 'package:parcel_track/views/dashboard/order_screen/components/order_details.dart';
+import 'package:parcel_track/views/dashboard/payment/shipping_and_payment.dart';
+import 'package:parcel_track/views/dashboard/profile_screen/components/about_us.dart';
+import 'package:parcel_track/views/dashboard/profile_screen/components/add_or_edit_address.dart';
+import 'package:parcel_track/views/dashboard/profile_screen/components/manage_address.dart';
+import 'package:parcel_track/views/dashboard/profile_screen/components/privacy_and_policy.dart';
+import 'package:parcel_track/views/dashboard/profile_screen/components/profile_update.dart';
+import 'package:parcel_track/views/dashboard/profile_screen/components/terms_and_conditions.dart';
+import 'package:parcel_track/views/dashboard/service_screen/components/service_based_stores.dart';
+import 'package:parcel_track/views/dashboard/service_screen/product_screen.dart';
+import 'package:parcel_track/views/splash_screen/on_boarding.dart';
+import 'package:parcel_track/views/splash_screen/splash_screen.dart';
 
 class Routes {
   /*We are mapping all th eroutes here

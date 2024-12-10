@@ -1,4 +1,4 @@
-import 'package:laundrymart_flutter/models/store_model/address.dart';
+import 'package:parcel_track/models/store_model/address.dart';
 
 class ServiceArg {
   final int serviceID;

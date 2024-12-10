@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:laundrymart_flutter/config/app_color.dart';
-import 'package:laundrymart_flutter/config/app_text.dart';
-import 'package:laundrymart_flutter/controllers/misc/enums.dart';
-import 'package:laundrymart_flutter/controllers/misc/misc_provider.dart';
-import 'package:laundrymart_flutter/utils/extensions.dart';
+import 'package:parcel_track/config/app_color.dart';
+import 'package:parcel_track/config/app_text.dart';
+import 'package:parcel_track/controllers/misc/enums.dart';
+import 'package:parcel_track/controllers/misc/misc_provider.dart';
+import 'package:parcel_track/utils/extensions.dart';
 
 class NotificationFilterList extends ConsumerWidget {
   const NotificationFilterList({super.key});

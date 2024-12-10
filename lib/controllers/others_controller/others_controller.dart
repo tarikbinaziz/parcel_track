@@ -1,10 +1,10 @@
-import 'package:laundrymart_flutter/controllers/misc/misc_provider.dart';
-import 'package:laundrymart_flutter/controllers/others_controller/order_condition_states.dart';
-import 'package:laundrymart_flutter/models/about_us_model/about_us_model.dart';
-import 'package:laundrymart_flutter/models/order_options_model/order_options_model.dart';
-import 'package:laundrymart_flutter/models/store_model/address.dart';
-import 'package:laundrymart_flutter/models/terms_and_condition_model/terms_and_condition_model.dart';
-import 'package:laundrymart_flutter/services/other_service.dart';
+import 'package:parcel_track/controllers/misc/misc_provider.dart';
+import 'package:parcel_track/controllers/others_controller/order_condition_states.dart';
+import 'package:parcel_track/models/about_us_model/about_us_model.dart';
+import 'package:parcel_track/models/order_options_model/order_options_model.dart';
+import 'package:parcel_track/models/store_model/address.dart';
+import 'package:parcel_track/models/terms_and_condition_model/terms_and_condition_model.dart';
+import 'package:parcel_track/services/other_service.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'others_controller.g.dart';

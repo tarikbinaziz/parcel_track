@@ -1,6 +1,6 @@
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:laundrymart_flutter/config/app_constants.dart';
-import 'package:laundrymart_flutter/services/profile_service.dart';
+import 'package:parcel_track/config/app_constants.dart';
+import 'package:parcel_track/services/profile_service.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 part 'profile_controller.g.dart';
 

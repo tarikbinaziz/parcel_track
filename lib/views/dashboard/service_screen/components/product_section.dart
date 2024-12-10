@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import 'package:laundrymart_flutter/config/app_color.dart';
-import 'package:laundrymart_flutter/config/app_text.dart';
-import 'package:laundrymart_flutter/controllers/dashboard/dashboard_controller.dart';
-import 'package:laundrymart_flutter/controllers/misc/misc_provider.dart';
-import 'package:laundrymart_flutter/views/cart/product_cart.dart';
+import 'package:parcel_track/config/app_color.dart';
+import 'package:parcel_track/config/app_text.dart';
+import 'package:parcel_track/controllers/dashboard/dashboard_controller.dart';
+import 'package:parcel_track/controllers/misc/misc_provider.dart';
+import 'package:parcel_track/views/cart/product_cart.dart';
 
 class ProductSection extends ConsumerWidget {
   const ProductSection({super.key, required this.serviceID});

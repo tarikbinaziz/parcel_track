@@ -3,15 +3,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:laundrymart_flutter/config/app_color.dart';
-import 'package:laundrymart_flutter/config/app_constants.dart';
-import 'package:laundrymart_flutter/config/app_text.dart';
-import 'package:laundrymart_flutter/controllers/cart_controller/cart_repo.dart';
-import 'package:laundrymart_flutter/controllers/misc/misc_provider.dart';
-import 'package:laundrymart_flutter/generated/l10n.dart';
-import 'package:laundrymart_flutter/models/cart_models/hive_cart_model.dart';
-import 'package:laundrymart_flutter/models/product_model/product_model.dart';
-import 'package:laundrymart_flutter/utils/extensions.dart';
+import 'package:parcel_track/config/app_color.dart';
+import 'package:parcel_track/config/app_constants.dart';
+import 'package:parcel_track/config/app_text.dart';
+import 'package:parcel_track/controllers/cart_controller/cart_repo.dart';
+import 'package:parcel_track/controllers/misc/misc_provider.dart';
+import 'package:parcel_track/generated/l10n.dart';
+import 'package:parcel_track/models/cart_models/hive_cart_model.dart';
+import 'package:parcel_track/models/product_model/product_model.dart';
+import 'package:parcel_track/utils/extensions.dart';
 
 class ProductCart extends ConsumerWidget {
   const ProductCart({super.key, required this.productModel});

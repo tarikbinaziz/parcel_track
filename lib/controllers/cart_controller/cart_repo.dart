@@ -1,6 +1,6 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:laundrymart_flutter/models/cart_models/hive_cart_model.dart';
+import 'package:parcel_track/models/cart_models/hive_cart_model.dart';
 
 final cartRepo = Provider((ref) => CartRepo(ref));
 

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:laundrymart_flutter/controllers/misc/enums.dart';
-import 'package:laundrymart_flutter/models/app_settings.dart/app_settings.dart';
+import 'package:parcel_track/controllers/misc/enums.dart';
+import 'package:parcel_track/models/app_settings.dart/app_settings.dart';
 
 final homeScreenIndexProvider = StateProvider.autoDispose<int>((ref) {
   return 0;

@@ -2,12 +2,12 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:laundrymart_flutter/config/app_color.dart';
-import 'package:laundrymart_flutter/config/app_text.dart';
-import 'package:laundrymart_flutter/controllers/dashboard/dashboard_controller.dart';
-import 'package:laundrymart_flutter/models/others.dart';
-import 'package:laundrymart_flutter/routes.dart';
-import 'package:laundrymart_flutter/utils/extensions.dart';
+import 'package:parcel_track/config/app_color.dart';
+import 'package:parcel_track/config/app_text.dart';
+import 'package:parcel_track/controllers/dashboard/dashboard_controller.dart';
+import 'package:parcel_track/models/others.dart';
+import 'package:parcel_track/routes.dart';
+import 'package:parcel_track/utils/extensions.dart';
 
 class ServiceTab extends ConsumerWidget {
   const ServiceTab({super.key, required this.storeId});

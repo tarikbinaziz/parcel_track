@@ -1,7 +1,7 @@
 import 'dart:io';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:laundrymart_flutter/config/app_constants.dart';
-import 'package:laundrymart_flutter/services/auth_service.dart';
+import 'package:parcel_track/config/app_constants.dart';
+import 'package:parcel_track/services/auth_service.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 part 'auth_controller.g.dart';
 

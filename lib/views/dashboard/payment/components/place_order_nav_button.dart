@@ -4,18 +4,18 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:laundrymart_flutter/components/custom_button.dart';
-import 'package:laundrymart_flutter/config/app_color.dart';
-import 'package:laundrymart_flutter/config/app_constants.dart';
-import 'package:laundrymart_flutter/config/app_text.dart';
-import 'package:laundrymart_flutter/controllers/cart_controller/cart_controller.dart';
-import 'package:laundrymart_flutter/controllers/misc/misc_provider.dart';
-import 'package:laundrymart_flutter/controllers/orders/orders_controller.dart';
-import 'package:laundrymart_flutter/generated/l10n.dart';
-import 'package:laundrymart_flutter/models/cart_models/hive_cart_model.dart';
-import 'package:laundrymart_flutter/models/order_model/order_model.dart';
-import 'package:laundrymart_flutter/routes.dart';
-import 'package:laundrymart_flutter/utils/extensions.dart';
+import 'package:parcel_track/components/custom_button.dart';
+import 'package:parcel_track/config/app_color.dart';
+import 'package:parcel_track/config/app_constants.dart';
+import 'package:parcel_track/config/app_text.dart';
+import 'package:parcel_track/controllers/cart_controller/cart_controller.dart';
+import 'package:parcel_track/controllers/misc/misc_provider.dart';
+import 'package:parcel_track/controllers/orders/orders_controller.dart';
+import 'package:parcel_track/generated/l10n.dart';
+import 'package:parcel_track/models/cart_models/hive_cart_model.dart';
+import 'package:parcel_track/models/order_model/order_model.dart';
+import 'package:parcel_track/routes.dart';
+import 'package:parcel_track/utils/extensions.dart';
 
 class PlaceOrderNavButton extends ConsumerWidget {
   const PlaceOrderNavButton({

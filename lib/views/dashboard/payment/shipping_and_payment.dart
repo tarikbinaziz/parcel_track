@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:laundrymart_flutter/components/common_appBar.dart';
-import 'package:laundrymart_flutter/config/app_color.dart';
-import 'package:laundrymart_flutter/config/app_text.dart';
-import 'package:laundrymart_flutter/generated/l10n.dart';
-import 'package:laundrymart_flutter/utils/extensions.dart';
-import 'package:laundrymart_flutter/views/dashboard/payment/components/cupon_code.dart';
-import 'package:laundrymart_flutter/views/dashboard/payment/components/order_summary.dart';
-import 'package:laundrymart_flutter/views/dashboard/payment/components/payment_method_section.dart';
-import 'package:laundrymart_flutter/views/dashboard/payment/components/place_order_nav_button.dart';
-import 'package:laundrymart_flutter/views/dashboard/payment/components/shipping_address.dart';
-import 'package:laundrymart_flutter/views/dashboard/payment/components/shipping_schedule.dart';
+import 'package:parcel_track/components/common_appBar.dart';
+import 'package:parcel_track/config/app_color.dart';
+import 'package:parcel_track/config/app_text.dart';
+import 'package:parcel_track/generated/l10n.dart';
+import 'package:parcel_track/utils/extensions.dart';
+import 'package:parcel_track/views/dashboard/payment/components/cupon_code.dart';
+import 'package:parcel_track/views/dashboard/payment/components/order_summary.dart';
+import 'package:parcel_track/views/dashboard/payment/components/payment_method_section.dart';
+import 'package:parcel_track/views/dashboard/payment/components/place_order_nav_button.dart';
+import 'package:parcel_track/views/dashboard/payment/components/shipping_address.dart';
+import 'package:parcel_track/views/dashboard/payment/components/shipping_schedule.dart';
 
 class ShippingAndPayment extends StatelessWidget {
   const ShippingAndPayment({super.key, required this.isReOrder});

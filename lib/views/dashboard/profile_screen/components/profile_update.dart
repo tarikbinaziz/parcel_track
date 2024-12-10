@@ -9,16 +9,16 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:form_builder_validators/form_builder_validators.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:laundrymart_flutter/components/common_appBar.dart';
-import 'package:laundrymart_flutter/components/custom_button.dart';
-import 'package:laundrymart_flutter/config/app_color.dart';
-import 'package:laundrymart_flutter/config/app_constants.dart';
-import 'package:laundrymart_flutter/config/app_text.dart';
-import 'package:laundrymart_flutter/config/theme.dart';
-import 'package:laundrymart_flutter/controllers/misc/misc_provider.dart';
-import 'package:laundrymart_flutter/controllers/profile/profile_controller.dart';
-import 'package:laundrymart_flutter/generated/l10n.dart';
-import 'package:laundrymart_flutter/utils/extensions.dart';
+import 'package:parcel_track/components/common_appBar.dart';
+import 'package:parcel_track/components/custom_button.dart';
+import 'package:parcel_track/config/app_color.dart';
+import 'package:parcel_track/config/app_constants.dart';
+import 'package:parcel_track/config/app_text.dart';
+import 'package:parcel_track/config/theme.dart';
+import 'package:parcel_track/controllers/misc/misc_provider.dart';
+import 'package:parcel_track/controllers/profile/profile_controller.dart';
+import 'package:parcel_track/generated/l10n.dart';
+import 'package:parcel_track/utils/extensions.dart';
 
 class ProfileUpdateScreen extends ConsumerWidget {
   ProfileUpdateScreen({super.key});

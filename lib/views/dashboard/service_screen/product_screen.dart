@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:laundrymart_flutter/components/custom_button.dart';
-import 'package:laundrymart_flutter/config/app_color.dart';
-import 'package:laundrymart_flutter/config/app_constants.dart';
-import 'package:laundrymart_flutter/config/app_text.dart';
-import 'package:laundrymart_flutter/generated/l10n.dart';
-import 'package:laundrymart_flutter/models/cart_models/hive_cart_model.dart';
-import 'package:laundrymart_flutter/models/others.dart';
-import 'package:laundrymart_flutter/routes.dart';
-import 'package:laundrymart_flutter/utils/extensions.dart';
-import 'package:laundrymart_flutter/views/dashboard/home_screen/components/home_appBar.dart';
-import 'package:laundrymart_flutter/views/dashboard/service_screen/components/product_section.dart';
-import 'package:laundrymart_flutter/views/dashboard/service_screen/components/varient_section.dart';
+import 'package:parcel_track/components/custom_button.dart';
+import 'package:parcel_track/config/app_color.dart';
+import 'package:parcel_track/config/app_constants.dart';
+import 'package:parcel_track/config/app_text.dart';
+import 'package:parcel_track/generated/l10n.dart';
+import 'package:parcel_track/models/cart_models/hive_cart_model.dart';
+import 'package:parcel_track/models/others.dart';
+import 'package:parcel_track/routes.dart';
+import 'package:parcel_track/utils/extensions.dart';
+import 'package:parcel_track/views/dashboard/home_screen/components/home_appBar.dart';
+import 'package:parcel_track/views/dashboard/service_screen/components/product_section.dart';
+import 'package:parcel_track/views/dashboard/service_screen/components/varient_section.dart';
 
 class ProductScreen extends StatelessWidget {
   const ProductScreen({super.key, required this.arg});

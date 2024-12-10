@@ -1,7 +1,7 @@
 import 'package:dio/dio.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:laundrymart_flutter/config/app_constants.dart';
-import 'package:laundrymart_flutter/utils/api_client.dart';
+import 'package:parcel_track/config/app_constants.dart';
+import 'package:parcel_track/utils/api_client.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'order_service.g.dart';

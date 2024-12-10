@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:laundrymart_flutter/controllers/misc/misc_provider.dart';
-import 'package:laundrymart_flutter/views/dashboard/components/bottom_nav_bar.dart';
-import 'package:laundrymart_flutter/views/dashboard/home_screen/home_screen.dart';
-import 'package:laundrymart_flutter/views/dashboard/nearby_store/near_by_store.dart';
-import 'package:laundrymart_flutter/views/dashboard/notificaton_screen/notification_screen.dart';
-import 'package:laundrymart_flutter/views/dashboard/order_screen/my_order_screen.dart';
-import 'package:laundrymart_flutter/views/dashboard/profile_screen/profile_screen.dart';
+import 'package:parcel_track/controllers/misc/misc_provider.dart';
+import 'package:parcel_track/views/dashboard/components/bottom_nav_bar.dart';
+import 'package:parcel_track/views/dashboard/home_screen/home_screen.dart';
+import 'package:parcel_track/views/dashboard/nearby_store/near_by_store.dart';
+import 'package:parcel_track/views/dashboard/notificaton_screen/notification_screen.dart';
+import 'package:parcel_track/views/dashboard/order_screen/my_order_screen.dart';
+import 'package:parcel_track/views/dashboard/profile_screen/profile_screen.dart';
 
 class DashBoardScreen extends ConsumerWidget {
   const DashBoardScreen({super.key});

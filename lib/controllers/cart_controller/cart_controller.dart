@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:laundrymart_flutter/models/cart_models/hive_cart_model.dart';
+import 'package:parcel_track/models/cart_models/hive_cart_model.dart';
 
 final cartController = ChangeNotifierProvider<CartController>((ref) {
   return CartController(ref: ref);

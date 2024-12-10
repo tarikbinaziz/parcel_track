@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:laundrymart_flutter/components/common_appBar.dart';
-import 'package:laundrymart_flutter/config/app_color.dart';
-import 'package:laundrymart_flutter/controllers/others_controller/others_controller.dart';
-import 'package:laundrymart_flutter/generated/l10n.dart';
-import 'package:laundrymart_flutter/utils/extensions.dart';
+import 'package:parcel_track/components/common_appBar.dart';
+import 'package:parcel_track/config/app_color.dart';
+import 'package:parcel_track/controllers/others_controller/others_controller.dart';
+import 'package:parcel_track/generated/l10n.dart';
+import 'package:parcel_track/utils/extensions.dart';
 
 class AboutUs extends ConsumerWidget {
   const AboutUs({super.key});

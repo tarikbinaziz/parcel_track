@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:laundrymart_flutter/config/app_color.dart';
-import 'package:laundrymart_flutter/generated/l10n.dart';
-import 'package:laundrymart_flutter/models/store_model/store_model.dart';
-import 'package:laundrymart_flutter/utils/extensions.dart';
-import 'package:laundrymart_flutter/views/dashboard/nearby_store/components/about_tab.dart';
-import 'package:laundrymart_flutter/views/dashboard/nearby_store/components/review_tab.dart';
-import 'package:laundrymart_flutter/views/dashboard/nearby_store/components/services_tab.dart';
+import 'package:parcel_track/config/app_color.dart';
+import 'package:parcel_track/generated/l10n.dart';
+import 'package:parcel_track/models/store_model/store_model.dart';
+import 'package:parcel_track/utils/extensions.dart';
+import 'package:parcel_track/views/dashboard/nearby_store/components/about_tab.dart';
+import 'package:parcel_track/views/dashboard/nearby_store/components/review_tab.dart';
+import 'package:parcel_track/views/dashboard/nearby_store/components/services_tab.dart';
 
 class ShopServices extends ConsumerStatefulWidget {
   const ShopServices({super.key, required this.storeModel});
