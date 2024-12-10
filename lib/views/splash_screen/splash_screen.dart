@@ -52,7 +52,7 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
         position: _offsetAnimation,
         child: Image.asset(
           "assets/images/png/logo_black.png",
-          width: 120.w,
+          width: 100.w,
         ),
       ),
     );

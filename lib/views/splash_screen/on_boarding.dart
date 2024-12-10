@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:hive_flutter/hive_flutter.dart';
 import 'package:parcel_track/components/custom_button.dart';
 import 'package:parcel_track/config/app_color.dart';
-import 'package:parcel_track/config/app_constants.dart';
 import 'package:parcel_track/config/app_text.dart';
 import 'package:parcel_track/controllers/misc/misc_provider.dart';
 import 'package:parcel_track/generated/l10n.dart';
@@ -22,109 +20,57 @@ class OnBoardingScreen extends ConsumerWidget {
     final imgPageController =
         ref.watch(onBoardingSliderControllerProvider('image'));
     shouldAnimate = true;
-    return Padding(
-      padding: EdgeInsets.only(top: 40.h, left: 20.w, right: 20.w),
-      child: Stack(
-        children: [
-          ListView(
-            padding: EdgeInsets.zero,
-            children: [
-              Hero(
+    return Container(
+      decoration: BoxDecoration(
+          image: DecorationImage(
+              colorFilter: ColorFilter.mode(
+                  Colors.black.withOpacity(0.65), BlendMode.darken),
+              fit: BoxFit.cover,
+              image: const AssetImage("assets/images/png/Rectangle 1467.png"))),
+      child: Padding(
+        padding: EdgeInsets.only(top: 40.h, left: 20.w, right: 20.w),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            40.ph,
+            Center(
+              child: Hero(
                 tag: 'logo',
                 child: Image.asset(
                   Theme.of(context).scaffoldBackgroundColor ==
                           AppColor.grayBlackBG
                       ? "assets/images/png/logo_black.png"
                       : "assets/images/png/logo_black.png",
-                  height: 80.h,
+                  height: 90.h,
                 ),
               ),
-              AnimatedScale(
-                duration: const Duration(milliseconds: 500),
-                scale: shouldAnimate ? 1 : 0,
-                child: const OnBoadringImageSlider(),
-              ),
-              20.ph,
-              SizedBox(
-                width: 335.w,
-                height: 6.h,
-                child: CustomJourneyDot(activeIndex: index, count: 3),
-              ),
-              20.ph,
-              const OnBoadringTextSlider(),
-              20.ph,
-              CustomButton(
-                text: S.of(context).letsGetStarted,
-                onPressed: () {
-                  if (index < 2) {
-                    ref
-                        .watch(onBoardingSliderIndexProvider.notifier)
-                        .update((state) {
-                      imgPageController.animateToPage(
-                        state + 1,
-                        duration: const Duration(milliseconds: 200),
-                        curve: Curves.easeInOut,
-                      );
-                      return state + 1;
-                    });
-                  } else {
-                    final Box appSettingsBox =
-                        Hive.box(AppConstants.appSettingsBox);
-                    appSettingsBox.put(AppConstants.hasSeenSplashScreen, true);
+            ),
+            Expanded(child: 20.ph),
+            Text(
+              "Request for Delivery\nin few clicks",
+              style: AppTextStyle.title
+                  .copyWith(fontSize: 24.sp, color: Colors.white),
+            ),
+            20.ph,
+            Text(
+              "On-demand delivery whenever and\nwherever the need arises.",
+              style: AppTextStyle.normalBody.copyWith(color: Colors.white),
+            ),
+            70.ph,
+            SizedBox(
+              width: double.infinity,
+              child: CustomButton(
+                  text: S.of(context).letsGetStarted,
+                  onPressed: () {
                     context.nav.pushNamedAndRemoveUntil(
                       Routes.dashboardScreen,
                       (route) => false,
                     );
-                  }
-                },
-              )
-            ],
-          ),
-          if (index < 2)
-            Positioned(
-              right: 0,
-              top: 0,
-              child: GestureDetector(
-                onTap: () {
-                  final Box appSettingsBox =
-                      Hive.box(AppConstants.appSettingsBox);
-                  appSettingsBox.put(AppConstants.hasSeenSplashScreen, true);
-                  context.nav.pushNamedAndRemoveUntil(
-                    Routes.dashboardScreen,
-                    (route) => false,
-                  );
-                },
-                child: Container(
-                  // height: 30.h,
-                  // width: 70.w,
-                  padding: EdgeInsets.only(left: 5.w),
-                  decoration: BoxDecoration(
-                    color: AppColor.primaryColor,
-                    borderRadius: BorderRadius.circular(5.w),
-                    border: Border.all(color: Colors.grey),
-                  ),
-                  child: Row(
-                    mainAxisSize: MainAxisSize.min,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text(
-                        S.of(context).skip,
-                        style: AppTextStyle.normalBody.copyWith(
-                          color: Colors.white,
-                          fontSize: 14.sp,
-                          fontWeight: FontWeight.w700,
-                        ),
-                      ),
-                      SizedBox(width: 10.w),
-                      const Icon(
-                        Icons.arrow_right,
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-            )
-        ],
+                  }),
+            ),
+            120.ph,
+          ],
+        ),
       ),
     );
   }
