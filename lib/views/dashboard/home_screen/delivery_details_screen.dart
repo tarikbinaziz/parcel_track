@@ -26,7 +26,7 @@ class _DeliveryDetailsScreenState extends ConsumerState<DeliveryDetailsScreen> {
         ),
       ),
       body: Padding(
-          padding: const EdgeInsets.all(16.0),
+          padding: EdgeInsets.symmetric(horizontal: 16.0.w),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -36,24 +36,25 @@ class _DeliveryDetailsScreenState extends ConsumerState<DeliveryDetailsScreen> {
                   padding: const EdgeInsets.all(12.0),
                   child: Row(
                     children: [
-                      const CircleAvatar(
+                      CircleAvatar(
                         backgroundColor: AppColor.greyBackgroundColor,
-                        radius: 30.0,
-                        child: Icon(Icons.person, color: AppColor.primaryColor),
+                        radius: 30.0.r,
+                        child: const Icon(Icons.person,
+                            color: AppColor.primaryColor),
                       ),
-                      const SizedBox(width: 16.0),
-                      const Expanded(
+                      SizedBox(width: 16.0.w),
+                      Expanded(
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
                               'Dev Tarik',
                               style: TextStyle(
-                                fontSize: 18.0,
+                                fontSize: 18.0.sp,
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
-                            Text(
+                            const Text(
                               '124 Deliveries',
                               style: TextStyle(
                                 color: Colors.grey,
@@ -62,17 +63,17 @@ class _DeliveryDetailsScreenState extends ConsumerState<DeliveryDetailsScreen> {
                             Row(
                               children: [
                                 Icon(Icons.star,
-                                    color: Colors.amber, size: 20.0),
+                                    color: Colors.amber, size: 14.0.w),
                                 Icon(Icons.star,
-                                    color: Colors.amber, size: 20.0),
+                                    color: Colors.amber, size: 14.0.w),
                                 Icon(Icons.star,
-                                    color: Colors.amber, size: 20.0),
+                                    color: Colors.amber, size: 14.0.w),
                                 Icon(Icons.star,
-                                    color: Colors.amber, size: 20.0),
+                                    color: Colors.amber, size: 14.0.w),
                                 Icon(Icons.star_half,
-                                    color: Colors.amber, size: 20.0),
-                                SizedBox(width: 8.0),
-                                Text('4.1'),
+                                    color: Colors.amber, size: 14.0.w),
+                                SizedBox(width: 8.0.w),
+                                const Text('4.1'),
                               ],
                             ),
                           ],
@@ -109,13 +110,19 @@ class _DeliveryDetailsScreenState extends ConsumerState<DeliveryDetailsScreen> {
                               color: AppColor.cardLightBg,
                               shape: BoxShape.circle,
                             ),
-                            child: IconButton(
-                              icon:
-                                  const Icon(Icons.phone, color: Colors.green),
-                              onPressed: () {
-                                //make url launch phone call
-                                makePhoneCall();
-                              },
+                            child: Padding(
+                              padding: EdgeInsets.all(10.0.r),
+                              child: GestureDetector(
+                                child: Icon(
+                                  Icons.phone,
+                                  color: AppColor.primaryColor,
+                                  size: 18.w,
+                                ),
+                                onTap: () {
+                                  //make url launch phone call
+                                  makePhoneCall();
+                                },
+                              ),
                             ),
                           ),
                         ],

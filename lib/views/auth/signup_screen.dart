@@ -249,10 +249,7 @@ class _SignUpScreenState extends ConsumerState<SignUpScreen> {
                                 style: AppTextStyle.normalBody,
                               ),
                               GestureDetector(
-                                onTap: () {
-                                  context.nav
-                                      .pushNamed(Routes.termsAndConditions);
-                                },
+                                onTap: () {},
                                 child: Text(
                                   S.of(context).termsAndConditions,
                                   style: AppTextStyle.normalBody.copyWith(
@@ -287,7 +284,7 @@ class _SignUpScreenState extends ConsumerState<SignUpScreen> {
                                   );
                           },
                         ),
-                        12.ph,
+                        40.ph,
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
@@ -302,13 +299,15 @@ class _SignUpScreenState extends ConsumerState<SignUpScreen> {
                               child: Text(
                                 " ${S.of(context).login} ${S.of(context).here}",
                                 style: AppTextStyle.normalBody.copyWith(
+                                  fontWeight: FontWeight.w700,
                                   color: AppColor.primaryColor,
-                                  fontWeight: FontWeight.w400,
+                                  fontSize: 14.sp,
                                 ),
                               ),
                             )
                           ],
                         ),
+                        24.ph,
                       ],
                     ),
                   ],

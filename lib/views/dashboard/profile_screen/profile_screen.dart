@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_form_builder/flutter_form_builder.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:parcel_track/components/custom_button.dart';
 import 'package:parcel_track/config/app_color.dart';
@@ -23,90 +24,105 @@ class ProfileScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: context.isDarkMode ? AppColor.grayBlackBG : Colors.white,
-      body: ValueListenableBuilder(
-          valueListenable: Hive.box(AppConstants.authBox).listenable(),
-          builder: (context, Box authBox, child) {
-            final isLoggedIn = authBox.get(AppConstants.authToken) != null;
-            return Column(
-              children: [
-                _profileHeader(context),
-                24.ph,
-                Container(
-                  width: double.infinity,
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 16, vertical: 20)
-                          .r,
-                  child: Column(
-                    children: [
-                      OthersButton(
-                        iconPath: Icons.payment,
-                        title: "Payments",
-                        onTap: () {},
-                      ),
-                      16.ph,
-                      OthersButton(
-                        iconPath: Icons.history,
-                        title: "Delivery History",
-                        onTap: () {},
-                      ),
-                      16.ph,
-                      OthersButton(
-                        iconPath: Icons.read_more,
-                        title: S.of(context).termsAndConditions,
-                        onTap: () {},
-                      ),
-                      16.ph,
-                      OthersButton(
-                        iconPath: Icons.security,
-                        title: S.of(context).privacyPolicy,
-                        onTap: () {},
-                      ),
-                      16.ph,
-                      OthersButton(
-                        iconPath: Icons.info_outline,
-                        title: S.of(context).aboutUs,
-                        onTap: () {},
-                      ),
-                      32.ph,
-                      SizedBox(
-                        width: double.infinity,
-                        child: TextButton(
-                          onPressed: () {
-                            logoutpopup(context);
-                          },
-                          style: ButtonStyle(
-                            shape: WidgetStateProperty.all(
-                                RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(50.r))),
-                            side: WidgetStateProperty.all(
-                                const BorderSide(color: AppColor.primaryColor)),
-                            padding: WidgetStateProperty.all(
-                                EdgeInsets.symmetric(
-                                    horizontal: 16.r, vertical: 12.r)),
-                          ),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              const Icon(
-                                Icons.logout,
-                                color: AppColor.primaryColor,
-                              ),
-                              16.pw,
-                              Text(
-                                S.of(context).logout,
-                                style: AppTextStyle.normalBody
-                                    .copyWith(color: AppColor.primaryColor),
-                              ),
-                            ],
-                          ),
-                        ),
-                      )
-                    ],
+      body: SingleChildScrollView(
+        child: AnimationLimiter(
+            child: Column(
+                children: AnimationConfiguration.toStaggeredList(
+          duration: const Duration(milliseconds: 375),
+          childAnimationBuilder: (widget) => SlideAnimation(
+            verticalOffset: 50.0,
+            child: FadeInAnimation(
+              child: widget,
+            ),
+          ),
+          children: [
+            _profileHeader(context),
+            24.ph,
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Column(
+                children: [
+                  OthersButton(
+                    iconPath: Icons.payment,
+                    title: "Payments",
+                    onTap: () {
+                      context.nav.pushNamed(Routes.paymentListScreen);
+                    },
                   ),
-                )
-              ],
-            );
-          }),
+                  16.ph,
+                  OthersButton(
+                    iconPath: Icons.history,
+                    title: "Delivery History",
+                    onTap: () {
+                      context.nav
+                          .pushNamed(Routes.historyScreen, arguments: true);
+                    },
+                  ),
+                  16.ph,
+                  OthersButton(
+                    iconPath: Icons.read_more,
+                    title: S.of(context).termsAndConditions,
+                    onTap: () {
+                      context.nav.pushNamed(Routes.othersScreen,
+                          arguments: "Terms & Conditions");
+                    },
+                  ),
+                  16.ph,
+                  OthersButton(
+                    iconPath: Icons.security,
+                    title: S.of(context).privacyPolicy,
+                    onTap: () {
+                      context.nav.pushNamed(Routes.othersScreen,
+                          arguments: "Privacy Policy");
+                    },
+                  ),
+                  16.ph,
+                  OthersButton(
+                    iconPath: Icons.info_outline,
+                    title: S.of(context).aboutUs,
+                    onTap: () {
+                      context.nav.pushNamed(Routes.othersScreen,
+                          arguments: "About Us");
+                    },
+                  ),
+                  32.ph,
+                  SizedBox(
+                    width: double.infinity,
+                    child: TextButton(
+                      onPressed: () {
+                        logoutpopup(context);
+                      },
+                      style: ButtonStyle(
+                        shape: WidgetStateProperty.all(RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(50.r))),
+                        side: WidgetStateProperty.all(
+                            const BorderSide(color: AppColor.primaryColor)),
+                        padding: WidgetStateProperty.all(EdgeInsets.symmetric(
+                            horizontal: 16.r, vertical: 12.r)),
+                      ),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          const Icon(
+                            Icons.logout,
+                            color: AppColor.primaryColor,
+                          ),
+                          16.pw,
+                          Text(
+                            S.of(context).logout,
+                            style: AppTextStyle.normalBody
+                                .copyWith(color: AppColor.primaryColor),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            )
+          ],
+        ))),
+      ),
     );
   }
 
@@ -185,37 +201,50 @@ class ProfileScreen extends StatelessWidget {
                   ),
                 )
               : Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    Container(
-                      height: 75.r,
-                      width: 75.r,
-                      clipBehavior: Clip.antiAlias,
-                      decoration: const BoxDecoration(
-                        shape: BoxShape.circle,
-                      ),
-                      child: Icon(
-                        Icons.person,
-                        size: 60.h,
-                      ),
-                    ),
-                    16.pw,
-                    Text(
-                      S.of(context).login,
-                      style: AppTextStyle.normalBody.copyWith(
-                        fontSize: 18.sp,
-                        fontWeight: FontWeight.w700,
-                      ),
-                    ),
-                    const Spacer(),
-                    SizedBox(
-                      width: 100.w,
-                      child: CustomButton(
-                        onPressed: () {
-                          context.nav.pushNamed(Routes.login);
-                        },
-                        text: S.of(context).login,
-                      ),
+                    Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        30.ph,
+                        Container(
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: AppColor.cardLightBg,
+                          ),
+                          child: Padding(
+                            padding: const EdgeInsets.all(16.0),
+                            child: Icon(
+                              Icons.person,
+                              size: 30.h,
+                            ),
+                          ),
+                        ),
+                        8.pw,
+                        Row(
+                          children: [
+                            Text(
+                              "Dev Tarik Bin Aziz",
+                              style: AppTextStyle.title.copyWith(
+                                fontSize: 14.sp,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+
+                            // GestureDetector(
+                            //   onTap: () {
+                            //     context.nav.pushNamed(Routes.login);
+                            //   },
+                            //   child: Text(S.of(context).login,
+                            //       style: AppTextStyle.title.copyWith(
+                            //         fontSize: 14.sp,
+                            //         color: AppColor.primaryColor,
+                            //       )),
+                            // )
+                          ],
+                        ),
+                      ],
                     ),
                   ],
                 ),
@@ -503,7 +532,7 @@ class OthersButton extends StatelessWidget {
                 Text(
                   title,
                   style: AppTextStyle.normalBody.copyWith(
-                    fontSize: 16.sp,
+                    fontSize: 14.sp,
                     fontWeight: FontWeight.w400,
                   ),
                 ),

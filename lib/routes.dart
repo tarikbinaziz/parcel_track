@@ -5,11 +5,13 @@ import 'package:parcel_track/views/auth/components/phone_verification.dart';
 import 'package:parcel_track/views/auth/login_screen.dart';
 import 'package:parcel_track/views/auth/signup_screen.dart';
 import 'package:parcel_track/views/dashboard/dashboard_screen.dart';
+import 'package:parcel_track/views/dashboard/history_screen/history_screen.dart';
 import 'package:parcel_track/views/dashboard/home_screen/confirm_details_screen.dart';
 import 'package:parcel_track/views/dashboard/home_screen/courier_details_screen.dart';
 import 'package:parcel_track/views/dashboard/home_screen/delivery_details_screen.dart';
 import 'package:parcel_track/views/dashboard/home_screen/details.dart';
 import 'package:parcel_track/views/dashboard/home_screen/instant_delivery_screen.dart';
+import 'package:parcel_track/views/dashboard/home_screen/notification_screen.dart';
 import 'package:parcel_track/views/dashboard/home_screen/schedule_delivery_screen.dart';
 import 'package:parcel_track/views/dashboard/profile_screen/components/about_us.dart';
 import 'package:parcel_track/views/dashboard/profile_screen/components/add_or_edit_address.dart';
@@ -17,6 +19,8 @@ import 'package:parcel_track/views/dashboard/profile_screen/components/manage_ad
 import 'package:parcel_track/views/dashboard/profile_screen/components/privacy_and_policy.dart';
 import 'package:parcel_track/views/dashboard/profile_screen/components/profile_update.dart';
 import 'package:parcel_track/views/dashboard/profile_screen/components/terms_and_conditions.dart';
+import 'package:parcel_track/views/dashboard/profile_screen/others_screen.dart';
+import 'package:parcel_track/views/dashboard/profile_screen/payments_screen.dart';
 import 'package:parcel_track/views/splash_screen/on_boarding.dart';
 import 'package:parcel_track/views/splash_screen/splash_screen.dart';
 
@@ -39,6 +43,10 @@ class Routes {
   static const courierDetailsScreen = '/courierDetails';
   static const scheduleDeliveryScreen = '/scheduleDelivery';
   static const deliveryDetailsScreen = '/deliveryDetails';
+  static const paymentListScreen = '/paymentsScreen';
+  static const historyScreen = '/historyScreen';
+  static const othersScreen = '/othersScreen';
+  static const notificationScreen = '/notificationScreen';
 
   static const cartScreen = '/cartScreen';
   static const shippingPayment = '/shippingPayment';
@@ -95,6 +103,23 @@ Route generatedRoutes(RouteSettings settings) {
     case Routes.courierDetailsScreen:
       child = const CourierDetailsScreen();
       break;
+    case Routes.paymentListScreen:
+      child = PaymentListScreen();
+      break;
+    case Routes.historyScreen:
+      child = HistoryScreen(
+        isShowBack: settings.arguments as bool,
+      );
+      break;
+    case Routes.othersScreen:
+      child = OthersScreen(
+        title: settings.arguments as String,
+      );
+      break;
+    case Routes.notificationScreen:
+      child = NotificationScreen();
+      break;
+
     case Routes.scheduleDeliveryScreen:
       child = const ScheduleDeliveryScreen();
       break;

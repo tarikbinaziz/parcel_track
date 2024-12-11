@@ -13,7 +13,7 @@ class DashBoardScreen extends ConsumerWidget {
       case 0:
         return const HomeScreen();
       case 1:
-        return const HistoryScreen();
+        return HistoryScreen();
       case 2:
         return const ProfileScreen();
       default:

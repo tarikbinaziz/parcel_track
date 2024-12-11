@@ -8,14 +8,15 @@ import 'package:parcel_track/routes.dart';
 import 'package:parcel_track/utils/extensions.dart';
 
 class HistoryScreen extends ConsumerWidget {
-  const HistoryScreen({super.key});
+  bool isShowBack;
+  HistoryScreen({super.key, this.isShowBack = false});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        automaticallyImplyLeading: false,
+        automaticallyImplyLeading: isShowBack ? true : false,
         scrolledUnderElevation: 0,
         title: Text("Delivery History", style: AppTextStyle.title),
       ),
@@ -25,39 +26,42 @@ class HistoryScreen extends ConsumerWidget {
           child: Column(
             children: [
               AnimationLimiter(
-                child: ListView.builder(
-                  itemCount: historyData.length,
-                  shrinkWrap: true,
-                  physics: const NeverScrollableScrollPhysics(),
-                  itemBuilder: (context, index) {
-                    final item = historyData[index];
+                child: Padding(
+                  padding: EdgeInsets.only(bottom: 24.0.h),
+                  child: ListView.builder(
+                    itemCount: historyData.length,
+                    shrinkWrap: true,
+                    physics: const NeverScrollableScrollPhysics(),
+                    itemBuilder: (context, index) {
+                      final item = historyData[index];
 
-                    return AnimationConfiguration.staggeredList(
-                      position: index,
-                      duration: const Duration(milliseconds: 375),
-                      child: SlideAnimation(
-                        verticalOffset: 50.0,
-                        child: FadeInAnimation(
-                          child: GestureDetector(
-                            onTap: () {
-                              context.nav.pushNamed(
-                                Routes.deliveryDetailsScreen,
-                                arguments: item["status"],
-                              );
-                            },
-                            child: _buildHistoryCard(
-                              context,
-                              orderId: item["orderId"]!,
-                              recipient: item["recipient"]!,
-                              location: item["location"]!,
-                              date: item["date"]!,
-                              status: item["status"]!,
+                      return AnimationConfiguration.staggeredList(
+                        position: index,
+                        duration: const Duration(milliseconds: 375),
+                        child: SlideAnimation(
+                          verticalOffset: 50.0,
+                          child: FadeInAnimation(
+                            child: GestureDetector(
+                              onTap: () {
+                                context.nav.pushNamed(
+                                  Routes.deliveryDetailsScreen,
+                                  arguments: item["status"],
+                                );
+                              },
+                              child: _buildHistoryCard(
+                                context,
+                                orderId: item["orderId"]!,
+                                recipient: item["recipient"]!,
+                                location: item["location"]!,
+                                date: item["date"]!,
+                                status: item["status"]!,
+                              ),
                             ),
                           ),
                         ),
-                      ),
-                    );
-                  },
+                      );
+                    },
+                  ),
                 ),
               )
             ],

@@ -38,7 +38,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
               child: ListView(
                 padding: EdgeInsets.zero,
                 children: [
-                  60.ph,
+                  40.ph,
                   Align(
                     alignment: Alignment.center,
                     child: Image.asset(
@@ -56,7 +56,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                     alignment: Alignment.center,
                     child: SizedBox(
                       width: 250.w,
-                      height: 80.h,
+                      height: 50.h,
                     ),
                   ),
 

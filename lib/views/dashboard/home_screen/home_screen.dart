@@ -49,7 +49,9 @@ class HomeScreen extends StatelessWidget {
                   height: 24.h,
                   width: 24.w,
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  context.nav.pushNamed(Routes.notificationScreen);
+                },
               ),
             ],
           ),
@@ -92,6 +94,7 @@ class HomeScreen extends StatelessWidget {
                             height: 124.h,
                             width: double.infinity,
                             child: _buildOptionCard(
+                              imagePath: "assets/images/png/Vector.png",
                               context,
                               title: "Instant Delivery",
                               description:
@@ -111,6 +114,7 @@ class HomeScreen extends StatelessWidget {
                             height: 124.h,
                             width: double.infinity,
                             child: _buildOptionCard(
+                              imagePath: "assets/images/png/timer_24px.png",
                               context,
                               title: "Schedule Delivery",
                               description:
@@ -190,32 +194,45 @@ class HomeScreen extends StatelessWidget {
       {required String title,
       required String description,
       required IconData icon,
-      required Color backgroundColor}) {
-    return Container(
-      padding: EdgeInsets.all(12.w),
-      decoration: BoxDecoration(
-        color: backgroundColor,
-        borderRadius: BorderRadius.circular(10.r),
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Icon(icon, color: Colors.blue, size: 30.sp),
-          SizedBox(height: 10.h),
-          Text(
-            title,
-            style: TextStyle(
-                fontSize: 16.sp,
-                fontWeight: FontWeight.bold,
-                color: Colors.black),
+      required Color backgroundColor,
+      required String imagePath}) {
+    return Stack(
+      children: [
+        Container(
+          width: double.infinity,
+          padding: EdgeInsets.all(12.w),
+          decoration: BoxDecoration(
+            color: backgroundColor,
+            borderRadius: BorderRadius.circular(10.r),
           ),
-          SizedBox(height: 5.h),
-          Text(
-            description,
-            style: TextStyle(fontSize: 12.sp, color: Colors.grey[700]),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Icon(icon, color: Colors.blue, size: 30.sp),
+              SizedBox(height: 10.h),
+              Text(
+                title,
+                style: TextStyle(
+                    fontSize: 16.sp,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black),
+              ),
+              SizedBox(height: 5.h),
+              Text(
+                description,
+                style: TextStyle(fontSize: 12.sp, color: Colors.grey[700]),
+              ),
+            ],
           ),
-        ],
-      ),
+        ),
+        Align(
+          alignment: Alignment.topRight,
+          child: Image.asset(
+            imagePath,
+            color: AppColor.black.withOpacity(0.07),
+          ),
+        )
+      ],
     );
   }
 
