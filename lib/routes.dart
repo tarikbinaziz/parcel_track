@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
-import 'package:parcel_track/models/order_model/order.dart';
 import 'package:parcel_track/models/others.dart';
 import 'package:parcel_track/views/auth/components/phone_verification.dart';
 import 'package:parcel_track/views/auth/login_screen.dart';
@@ -8,11 +7,10 @@ import 'package:parcel_track/views/auth/signup_screen.dart';
 import 'package:parcel_track/views/dashboard/dashboard_screen.dart';
 import 'package:parcel_track/views/dashboard/home_screen/confirm_details_screen.dart';
 import 'package:parcel_track/views/dashboard/home_screen/courier_details_screen.dart';
+import 'package:parcel_track/views/dashboard/home_screen/delivery_details_screen.dart';
 import 'package:parcel_track/views/dashboard/home_screen/details.dart';
 import 'package:parcel_track/views/dashboard/home_screen/instant_delivery_screen.dart';
 import 'package:parcel_track/views/dashboard/home_screen/schedule_delivery_screen.dart';
-import 'package:parcel_track/views/dashboard/order_screen/components/order_details.dart';
-import 'package:parcel_track/views/dashboard/payment/shipping_and_payment.dart';
 import 'package:parcel_track/views/dashboard/profile_screen/components/about_us.dart';
 import 'package:parcel_track/views/dashboard/profile_screen/components/add_or_edit_address.dart';
 import 'package:parcel_track/views/dashboard/profile_screen/components/manage_address.dart';
@@ -40,6 +38,7 @@ class Routes {
   static const confirmDetailsScreen = '/confirmdetails';
   static const courierDetailsScreen = '/courierDetails';
   static const scheduleDeliveryScreen = '/scheduleDelivery';
+  static const deliveryDetailsScreen = '/deliveryDetails';
 
   static const cartScreen = '/cartScreen';
   static const shippingPayment = '/shippingPayment';
@@ -99,9 +98,10 @@ Route generatedRoutes(RouteSettings settings) {
     case Routes.scheduleDeliveryScreen:
       child = const ScheduleDeliveryScreen();
       break;
-
-    case Routes.shippingPayment:
-      child = ShippingAndPayment(isReOrder: settings.arguments as bool);
+    case Routes.deliveryDetailsScreen:
+      child = DeliveryDetailsScreen(
+        status: settings.arguments as String,
+      );
       break;
 
     case Routes.manageAddress:
@@ -111,12 +111,6 @@ Route generatedRoutes(RouteSettings settings) {
     case Routes.addOrUpdateAddress:
       child = AddOrEditAddressScreen(
         addressArg: settings.arguments as AddressArg?,
-      );
-      break;
-
-    case Routes.orderDetails:
-      child = OrderDetailsScreen(
-        order: settings.arguments as Order,
       );
       break;
 

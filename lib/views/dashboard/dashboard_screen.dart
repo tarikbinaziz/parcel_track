@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:parcel_track/controllers/misc/misc_provider.dart';
 import 'package:parcel_track/views/dashboard/components/bottom_nav_bar.dart';
+import 'package:parcel_track/views/dashboard/history_screen/history_screen.dart';
 import 'package:parcel_track/views/dashboard/home_screen/home_screen.dart';
-import 'package:parcel_track/views/dashboard/notificaton_screen/notification_screen.dart';
 import 'package:parcel_track/views/dashboard/profile_screen/profile_screen.dart';
 
 class DashBoardScreen extends ConsumerWidget {
@@ -13,7 +13,7 @@ class DashBoardScreen extends ConsumerWidget {
       case 0:
         return const HomeScreen();
       case 1:
-        return const NotificationScreen();
+        return const HistoryScreen();
       case 2:
         return const ProfileScreen();
       default:

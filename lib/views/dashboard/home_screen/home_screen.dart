@@ -128,18 +128,18 @@ class HomeScreen extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
-                          "History",
+                          "Today's Order",
                           style: AppTextStyle.title.copyWith(
                               color: AppColor.primaryColor, fontSize: 16.sp),
                         ),
-                        GestureDetector(
-                          onTap: () {},
-                          child: Text(
-                            "View all",
-                            style: AppTextStyle.title.copyWith(
-                                color: AppColor.primaryColor, fontSize: 16.sp),
-                          ),
-                        ),
+                        // GestureDetector(
+                        //   onTap: () {},
+                        //   child: Text(
+                        //     "View all",
+                        //     style: AppTextStyle.title.copyWith(
+                        //         color: AppColor.primaryColor, fontSize: 16.sp),
+                        //   ),
+                        // ),
                       ],
                     ),
                     SizedBox(height: 8.h),
@@ -157,13 +157,20 @@ class HomeScreen extends StatelessWidget {
                             child: SlideAnimation(
                               verticalOffset: 50.0,
                               child: FadeInAnimation(
-                                child: _buildHistoryCard(
-                                  context,
-                                  orderId: item["orderId"]!,
-                                  recipient: item["recipient"]!,
-                                  location: item["location"]!,
-                                  date: item["date"]!,
-                                  status: item["status"]!,
+                                child: GestureDetector(
+                                  onTap: () {
+                                    context.nav.pushNamed(
+                                        Routes.deliveryDetailsScreen,
+                                        arguments: item["status"]);
+                                  },
+                                  child: _buildHistoryCard(
+                                    context,
+                                    orderId: item["orderId"]!,
+                                    recipient: item["recipient"]!,
+                                    location: item["location"]!,
+                                    date: item["date"]!,
+                                    status: item["status"]!,
+                                  ),
                                 ),
                               ),
                             ),
@@ -326,25 +333,11 @@ class HomeScreen extends StatelessWidget {
 
 final List<Map<String, String>> historyData = [
   {
-    "orderId": "ORD1234",
-    "recipient": "Paul Pogba",
-    "location": "Maryland busstop, Anthony Ikeja",
-    "date": "12 January 2020, 2:43PM",
-    "status": "Completed",
-  },
-  {
     "orderId": "ORD5678",
     "recipient": "Lionel Messi",
     "location": "Victoria Island, Lagos",
     "date": "13 January 2020, 4:00PM",
     "status": "Pending",
-  },
-  {
-    "orderId": "ORD9101",
-    "recipient": "Cristiano Ronaldo",
-    "location": "Ikoyi, Lagos",
-    "date": "14 January 2020, 10:00AM",
-    "status": "Cancelled",
   },
   {
     "orderId": "ORD9101",
