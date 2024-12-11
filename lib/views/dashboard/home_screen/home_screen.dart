@@ -139,10 +139,12 @@ class HomeScreen extends StatelessWidget {
                     SizedBox(height: 8.h),
                     AnimationLimiter(
                       child: ListView.builder(
-                        itemCount: 8,
+                        itemCount: historyData.length,
                         shrinkWrap: true,
                         physics: const NeverScrollableScrollPhysics(),
                         itemBuilder: (context, index) {
+                          final item = historyData[index];
+
                           return AnimationConfiguration.staggeredList(
                             position: index,
                             duration: const Duration(milliseconds: 375),
@@ -151,11 +153,11 @@ class HomeScreen extends StatelessWidget {
                               child: FadeInAnimation(
                                 child: _buildHistoryCard(
                                   context,
-                                  orderId: "ORD1234",
-                                  recipient: "Paul Pogba",
-                                  location: "Maryland busstop, Anthony Ikeja",
-                                  date: "12 January 2020, 2:43PM",
-                                  status: "Completed",
+                                  orderId: item["orderId"]!,
+                                  recipient: item["recipient"]!,
+                                  location: item["location"]!,
+                                  date: item["date"]!,
+                                  status: item["status"]!,
                                 ),
                               ),
                             ),
@@ -233,7 +235,17 @@ class HomeScreen extends StatelessWidget {
                   width: 8.w,
                   height: 8.h,
                   decoration: BoxDecoration(
-                    color: AppColor.completed,
+                    color: status == "Completed"
+                        ? AppColor.completed
+                        : status == "Pending"
+                            ? Colors.orange
+                            : status == "Cancelled"
+                                ? Colors.red
+                                : status == "Delivering"
+                                    ? Colors.blue
+                                    : status == "Processing"
+                                        ? Colors.purple
+                                        : Colors.grey,
                     shape: BoxShape.circle,
                   ),
                 ),
@@ -281,7 +293,17 @@ class HomeScreen extends StatelessWidget {
             Container(
               padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 4.h),
               decoration: BoxDecoration(
-                color: Colors.green,
+                color: status == "Completed"
+                    ? AppColor.completed
+                    : status == "Pending"
+                        ? Colors.orange
+                        : status == "Cancelled"
+                            ? Colors.red
+                            : status == "Delivering"
+                                ? Colors.blue
+                                : status == "Processing"
+                                    ? Colors.purple
+                                    : Colors.grey,
                 borderRadius: BorderRadius.circular(20.r),
               ),
               child: Text(
@@ -295,3 +317,48 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
+
+final List<Map<String, String>> historyData = [
+  {
+    "orderId": "ORD1234",
+    "recipient": "Paul Pogba",
+    "location": "Maryland busstop, Anthony Ikeja",
+    "date": "12 January 2020, 2:43PM",
+    "status": "Completed",
+  },
+  {
+    "orderId": "ORD5678",
+    "recipient": "Lionel Messi",
+    "location": "Victoria Island, Lagos",
+    "date": "13 January 2020, 4:00PM",
+    "status": "Pending",
+  },
+  {
+    "orderId": "ORD9101",
+    "recipient": "Cristiano Ronaldo",
+    "location": "Ikoyi, Lagos",
+    "date": "14 January 2020, 10:00AM",
+    "status": "Cancelled",
+  },
+  {
+    "orderId": "ORD9101",
+    "recipient": "Cristiano Ronaldo",
+    "location": "Ikoyi, Lagos",
+    "date": "14 January 2020, 10:00AM",
+    "status": "Delivering",
+  },
+  {
+    "orderId": "ORD9101",
+    "recipient": "Cristiano Ronaldo",
+    "location": "Ikoyi, Lagos",
+    "date": "14 January 2020, 10:00AM",
+    "status": "Pending",
+  },
+  {
+    "orderId": "ORD9101",
+    "recipient": "Cristiano Ronaldo",
+    "location": "Ikoyi, Lagos",
+    "date": "14 January 2020, 10:00AM",
+    "status": "Processing",
+  },
+];
