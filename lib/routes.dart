@@ -2,12 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:parcel_track/models/order_model/order.dart';
 import 'package:parcel_track/models/others.dart';
-import 'package:parcel_track/models/store_model/store_model.dart';
 import 'package:parcel_track/views/auth/components/phone_verification.dart';
 import 'package:parcel_track/views/auth/login_screen.dart';
 import 'package:parcel_track/views/auth/signup_screen.dart';
-import 'package:parcel_track/views/cart/my_cart_screen.dart';
 import 'package:parcel_track/views/dashboard/dashboard_screen.dart';
+import 'package:parcel_track/views/dashboard/home_screen/details.dart';
 import 'package:parcel_track/views/dashboard/home_screen/instant_delivery_screen.dart';
 import 'package:parcel_track/views/dashboard/order_screen/components/order_details.dart';
 import 'package:parcel_track/views/dashboard/payment/shipping_and_payment.dart';
@@ -33,8 +32,8 @@ class Routes {
   static const onBoardingScreen = '/onBoardingScreen';
   static const phoneVerification = '/phoneVerification';
   static const dashboardScreen = '/dashboardScreen';
-
   static const instantDeliveryScreen = '/instantDeliveryScreen';
+  static const detailsScreen = '/details';
 
   static const cartScreen = '/cartScreen';
   static const shippingPayment = '/shippingPayment';
@@ -79,13 +78,11 @@ Route generatedRoutes(RouteSettings settings) {
       break;
 
     case Routes.instantDeliveryScreen:
-      child = InstantDeliveryScreen();
+      child = const InstantDeliveryScreen();
       break;
 
-
-
-    case Routes.cartScreen:
-      child = const CartScreen();
+    case Routes.detailsScreen:
+      child = const DetailsScreen();
       break;
 
     case Routes.shippingPayment:
@@ -111,8 +108,6 @@ Route generatedRoutes(RouteSettings settings) {
     case Routes.profileScreen:
       child = ProfileUpdateScreen();
       break;
-
-
 
     case Routes.termsAndConditions:
       child = const TermsAndConditions();

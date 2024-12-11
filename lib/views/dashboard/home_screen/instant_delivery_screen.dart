@@ -4,13 +4,16 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:parcel_track/components/custom_button.dart';
 import 'package:parcel_track/config/app_color.dart';
+import 'package:parcel_track/routes.dart';
+import 'package:parcel_track/utils/extensions.dart';
 import 'package:parcel_track/views/dashboard/home_screen/logic/providers.dart';
 
 class InstantDeliveryScreen extends ConsumerStatefulWidget {
   const InstantDeliveryScreen({super.key});
 
   @override
-  ConsumerState<InstantDeliveryScreen> createState() => _InstantDeliveryScreenState();
+  ConsumerState<InstantDeliveryScreen> createState() =>
+      _InstantDeliveryScreenState();
 }
 
 class _InstantDeliveryScreenState extends ConsumerState<InstantDeliveryScreen> {
@@ -95,28 +98,43 @@ class _InstantDeliveryScreenState extends ConsumerState<InstantDeliveryScreen> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           buildVehicleOption(
-                            onTap: () {
-                              ref.read(selectedVehicleProvider.notifier).state = "Bike";
-                            },
-                            isSelected:ref.watch(selectedVehicleProvider) == "Bike",
-                              icon: FontAwesomeIcons.motorcycle, label: "Bike"),
+                              onTap: () {
+                                ref
+                                    .read(selectedVehicleProvider.notifier)
+                                    .state = "Bike";
+                              },
+                              isSelected:
+                                  ref.watch(selectedVehicleProvider) == "Bike",
+                              icon: FontAwesomeIcons.motorcycle,
+                              label: "Bike"),
                           buildVehicleOption(
                               onTap: () {
-                                ref.read(selectedVehicleProvider.notifier).state = "Car";
+                                ref
+                                    .read(selectedVehicleProvider.notifier)
+                                    .state = "Car";
                               },
-                              isSelected:ref.watch(selectedVehicleProvider) == "Car",
-
-                              icon: FontAwesomeIcons.carSide, label: "Car"),
+                              isSelected:
+                                  ref.watch(selectedVehicleProvider) == "Car",
+                              icon: FontAwesomeIcons.carSide,
+                              label: "Car"),
                           buildVehicleOption(
                               onTap: () {
-                                ref.read(selectedVehicleProvider.notifier).state = "Truck";
+                                ref
+                                    .read(selectedVehicleProvider.notifier)
+                                    .state = "Truck";
                               },
-                              isSelected:ref.watch(selectedVehicleProvider) == "Truck",
-                              icon: FontAwesomeIcons.truck, label: "Truck"),
+                              isSelected:
+                                  ref.watch(selectedVehicleProvider) == "Truck",
+                              icon: FontAwesomeIcons.truck,
+                              label: "Truck"),
                         ],
                       ),
                       SizedBox(height: 40.h),
-                      CustomButton(onPressed: () {}, text: "Next")
+                      CustomButton(
+                          onPressed: () {
+                            context.nav.pushNamed(Routes.detailsScreen);
+                          },
+                          text: "Next")
                     ],
                   ),
                 );
@@ -170,7 +188,6 @@ class _InstantDeliveryScreenState extends ConsumerState<InstantDeliveryScreen> {
       required String label,
       bool isSelected = false,
       VoidCallback? onTap}) {
-        
     return GestureDetector(
       onTap: onTap,
       child: Column(
