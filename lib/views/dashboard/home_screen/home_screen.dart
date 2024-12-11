@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 import 'package:parcel_track/config/app_color.dart';
 import 'package:parcel_track/config/app_text.dart';
 import 'package:parcel_track/routes.dart';
@@ -11,141 +12,163 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // backgroundColor: Colors.grey[100],
-      appBar: AppBar(
-        automaticallyImplyLeading: false,
-        scrolledUnderElevation: 0,
-        backgroundColor: Colors.white,
-        elevation: 0,
-        leading: Padding(
-          padding: const EdgeInsets.only(left: 12.0),
-          child: Container(
-              decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  color: AppColor.primaryColor.withOpacity(0.1)),
-              child: const Icon(Icons.person, color: AppColor.primaryColor)),
-        ),
-        title: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  "Welcome",
-                  style:
-                      AppTextStyle.normalBody.copyWith(color: Colors.grey[600]),
-                ),
-                Text(
-                  "Dev Tarik",
-                  style: AppTextStyle.title,
-                ),
-              ],
-            ),
-            IconButton(
-              icon: Image.asset(
-                "assets/images/png/notification.png",
-                height: 24.h,
-                width: 24.w,
-              ),
-              onPressed: () {},
-            ),
-          ],
-        ),
-        actions: const [
-          // CircleAvatar(
-          //   backgroundColor: Colors.blue,
-          //   child: Text("DE", style: TextStyle(color: Colors.white)),
-          // ),
-        ],
-      ),
-      body: SingleChildScrollView(
-        child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 12.h),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+        // backgroundColor: Colors.grey[100],
+        appBar: AppBar(
+          automaticallyImplyLeading: false,
+          scrolledUnderElevation: 0,
+          backgroundColor: Colors.white,
+          elevation: 0,
+          leading: Padding(
+            padding: const EdgeInsets.only(left: 12.0),
+            child: Container(
+                decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: AppColor.primaryColor.withOpacity(0.1)),
+                child: const Icon(Icons.person, color: AppColor.primaryColor)),
+          ),
+          title: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text(
-                "What would you like to do?",
-                style: TextStyle(fontSize: 16.sp, color: Colors.grey[600]),
-              ),
-              SizedBox(height: 16.h),
-              // Options
               Column(
-                children: [
-                  GestureDetector(
-                    onTap: () {
-                      context.nav.pushNamed(Routes.instantDeliveryScreen);
-                    },
-                    child: SizedBox(
-                      height: 124.h,
-                      width: double.infinity,
-                      child: _buildOptionCard(
-                        context,
-                        title: "Instant Delivery",
-                        description:
-                            "Courier takes only your package and delivers instantly",
-                        icon: Icons.flash_on,
-                        backgroundColor: AppColor.cardLightPrimaryBg,
-                      ),
-                    ),
-                  ),
-                  SizedBox(height: 12.h),
-                  SizedBox(
-                    height: 124.h,
-                    width: double.infinity,
-                    child: _buildOptionCard(
-                      context,
-                      title: "Schedule Delivery",
-                      description:
-                          "Courier comes to pick up on your specified date and time",
-                      icon: Icons.schedule,
-                      backgroundColor: AppColor.greyBackgroundColor,
-                    ),
-                  ),
-                ],
-              ),
-              SizedBox(height: 16.h),
-              // History Section
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    "History",
-                    style: AppTextStyle.title.copyWith(
-                        color: AppColor.primaryColor, fontSize: 16.sp),
+                    "Welcome",
+                    style: AppTextStyle.normalBody
+                        .copyWith(color: Colors.grey[600]),
                   ),
-                  GestureDetector(
-                    onTap: () {},
-                    child: Text(
-                      "View all",
-                      style: AppTextStyle.title.copyWith(
-                          color: AppColor.primaryColor, fontSize: 16.sp),
-                    ),
+                  Text(
+                    "Dev Tarik",
+                    style: AppTextStyle.title,
                   ),
                 ],
               ),
-              SizedBox(height: 8.h),
-              ListView.builder(
-                itemCount: 8,
-                shrinkWrap: true,
-                physics: const NeverScrollableScrollPhysics(),
-                itemBuilder: (context, index) {
-                  return _buildHistoryCard(
-                    context,
-                    orderId: "ORD1234",
-                    recipient: "Paul Pogba",
-                    location: "Maryland busstop, Anthony Ikeja",
-                    date: "12 January 2020, 2:43PM",
-                    status: "Completed",
-                  );
-                },
+              IconButton(
+                icon: Image.asset(
+                  "assets/images/png/notification.png",
+                  height: 24.h,
+                  width: 24.w,
+                ),
+                onPressed: () {},
               ),
             ],
           ),
+          actions: const [
+            // CircleAvatar(
+            //   backgroundColor: Colors.blue,
+            //   child: Text("DE", style: TextStyle(color: Colors.white)),
+            // ),
+          ],
         ),
-      ),
-    );
+        body: SingleChildScrollView(
+          child: AnimationLimiter(
+            child: Padding(
+              padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 12.h),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: AnimationConfiguration.toStaggeredList(
+                  duration: const Duration(milliseconds: 375),
+                  childAnimationBuilder: (widget) => SlideAnimation(
+                    verticalOffset: 50.0,
+                    child: FadeInAnimation(
+                      child: widget,
+                    ),
+                  ),
+                  children: [
+                    Text(
+                      "What would you like to do?",
+                      style:
+                          TextStyle(fontSize: 16.sp, color: Colors.grey[600]),
+                    ),
+                    SizedBox(height: 16.h),
+                    // Options
+                    Column(
+                      children: [
+                        GestureDetector(
+                          onTap: () {
+                            context.nav.pushNamed(Routes.instantDeliveryScreen);
+                          },
+                          child: SizedBox(
+                            height: 124.h,
+                            width: double.infinity,
+                            child: _buildOptionCard(
+                              context,
+                              title: "Instant Delivery",
+                              description:
+                                  "Courier takes only your package and delivers instantly",
+                              icon: Icons.flash_on,
+                              backgroundColor: AppColor.cardLightPrimaryBg,
+                            ),
+                          ),
+                        ),
+                        SizedBox(height: 12.h),
+                        SizedBox(
+                          height: 124.h,
+                          width: double.infinity,
+                          child: _buildOptionCard(
+                            context,
+                            title: "Schedule Delivery",
+                            description:
+                                "Courier comes to pick up on your specified date and time",
+                            icon: Icons.schedule,
+                            backgroundColor: AppColor.greyBackgroundColor,
+                          ),
+                        ),
+                      ],
+                    ),
+                    SizedBox(height: 16.h),
+                    // History Section
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          "History",
+                          style: AppTextStyle.title.copyWith(
+                              color: AppColor.primaryColor, fontSize: 16.sp),
+                        ),
+                        GestureDetector(
+                          onTap: () {},
+                          child: Text(
+                            "View all",
+                            style: AppTextStyle.title.copyWith(
+                                color: AppColor.primaryColor, fontSize: 16.sp),
+                          ),
+                        ),
+                      ],
+                    ),
+                    SizedBox(height: 8.h),
+                    AnimationLimiter(
+                      child: ListView.builder(
+                        itemCount: 8,
+                        shrinkWrap: true,
+                        physics: const NeverScrollableScrollPhysics(),
+                        itemBuilder: (context, index) {
+                          return AnimationConfiguration.staggeredList(
+                            position: index,
+                            duration: const Duration(milliseconds: 375),
+                            child: SlideAnimation(
+                              verticalOffset: 50.0,
+                              child: FadeInAnimation(
+                                child: _buildHistoryCard(
+                                  context,
+                                  orderId: "ORD1234",
+                                  recipient: "Paul Pogba",
+                                  location: "Maryland busstop, Anthony Ikeja",
+                                  date: "12 January 2020, 2:43PM",
+                                  status: "Completed",
+                                ),
+                              ),
+                            ),
+                          );
+                        },
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+        ));
   }
 
   Widget _buildOptionCard(BuildContext context,
