@@ -6,6 +6,8 @@ import 'package:parcel_track/views/auth/components/phone_verification.dart';
 import 'package:parcel_track/views/auth/login_screen.dart';
 import 'package:parcel_track/views/auth/signup_screen.dart';
 import 'package:parcel_track/views/dashboard/dashboard_screen.dart';
+import 'package:parcel_track/views/dashboard/home_screen/confirm_details_screen.dart';
+import 'package:parcel_track/views/dashboard/home_screen/courier_details_screen.dart';
 import 'package:parcel_track/views/dashboard/home_screen/details.dart';
 import 'package:parcel_track/views/dashboard/home_screen/instant_delivery_screen.dart';
 import 'package:parcel_track/views/dashboard/order_screen/components/order_details.dart';
@@ -34,6 +36,9 @@ class Routes {
   static const dashboardScreen = '/dashboardScreen';
   static const instantDeliveryScreen = '/instantDeliveryScreen';
   static const detailsScreen = '/details';
+  static const confirmDetailsScreen = '/confirmdetails';
+  static const courierDetailsScreen = '/courierDetails';
+
 
   static const cartScreen = '/cartScreen';
   static const shippingPayment = '/shippingPayment';
@@ -84,6 +89,17 @@ Route generatedRoutes(RouteSettings settings) {
     case Routes.detailsScreen:
       child = const DetailsScreen();
       break;
+    case Routes.confirmDetailsScreen:
+      child = const ConfirmDetailsScreen();
+      break;
+    case Routes.courierDetailsScreen:
+      child = const CourierDetailsScreen();
+      break;
+
+
+
+
+
 
     case Routes.shippingPayment:
       child = ShippingAndPayment(isReOrder: settings.arguments as bool);

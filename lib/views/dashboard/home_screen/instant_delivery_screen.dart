@@ -35,9 +35,12 @@ class _InstantDeliveryScreenState extends ConsumerState<InstantDeliveryScreen> {
             Positioned(
               top: 40.h,
               left: 16.w,
-              child: const CircleAvatar(
-                backgroundColor: Colors.white,
-                child: Icon(Icons.arrow_back, color: Colors.black),
+              child: GestureDetector(
+                onTap: () => context.nav.pop(),
+                child: const CircleAvatar(
+                  backgroundColor: Colors.white,
+                  child: Icon(Icons.arrow_back, color: Colors.black),
+                ),
               ),
             ),
             DraggableScrollableSheet(

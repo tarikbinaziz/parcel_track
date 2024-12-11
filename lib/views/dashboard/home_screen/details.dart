@@ -8,6 +8,8 @@ import 'package:parcel_track/components/custom_button.dart';
 import 'package:parcel_track/config/app_color.dart';
 import 'package:parcel_track/config/app_text.dart';
 import 'package:parcel_track/config/theme.dart';
+import 'package:parcel_track/routes.dart';
+import 'package:parcel_track/utils/extensions.dart';
 
 class DetailsScreen extends StatefulWidget {
   const DetailsScreen({super.key});
@@ -240,7 +242,11 @@ class _DetailsScreenState extends State<DetailsScreen> {
             SizedBox(height: 24.h),
 
             // Continue button,
-            CustomButton(onPressed: () {}, text: 'Continue'),
+            CustomButton(
+                onPressed: () {
+                  context.nav.pushNamed(Routes.confirmDetailsScreen);
+                },
+                text: 'Continue'),
           ],
         ),
       ),
