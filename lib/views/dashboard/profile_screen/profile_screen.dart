@@ -1,10 +1,8 @@
-import 'package:animated_toggle_switch/animated_toggle_switch.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_form_builder/flutter_form_builder.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:parcel_track/components/custom_button.dart';
 import 'package:parcel_track/config/app_color.dart';
@@ -32,8 +30,7 @@ class ProfileScreen extends StatelessWidget {
             return Column(
               children: [
                 _profileHeader(context),
-                40.ph,
-                switches(),
+                24.ph,
                 Container(
                   width: double.infinity,
                   padding:
@@ -41,165 +38,75 @@ class ProfileScreen extends StatelessWidget {
                           .r,
                   child: Column(
                     children: [
-                      isLoggedIn
-                          ? OthersButton(
-                              iconPath: "assets/svgs/map.svg",
-                              title: S.of(context).manageAddress,
-                              onTap: () {
-                                context.nav.pushNamed(Routes.manageAddress);
-                              },
-                            )
-                          : const SizedBox.shrink(),
+                      OthersButton(
+                        iconPath: Icons.payment,
+                        title: "Payments",
+                        onTap: () {},
+                      ),
                       16.ph,
                       OthersButton(
-                        iconPath: "assets/svgs/message-text.svg",
+                        iconPath: Icons.history,
+                        title: "Delivery History",
+                        onTap: () {},
+                      ),
+                      16.ph,
+                      OthersButton(
+                        iconPath: Icons.read_more,
                         title: S.of(context).termsAndConditions,
-                        onTap: () {
-                          context.nav.pushNamed(Routes.termsAndConditions);
-                        },
+                        onTap: () {},
                       ),
                       16.ph,
                       OthersButton(
-                        iconPath: "assets/svgs/security-safe.svg",
+                        iconPath: Icons.security,
                         title: S.of(context).privacyPolicy,
-                        onTap: () {
-                          context.nav.pushNamed(Routes.privacyPolicy);
-                        },
+                        onTap: () {},
                       ),
                       16.ph,
                       OthersButton(
-                        iconPath: "assets/svgs/tabler_info-circle-filled.svg",
+                        iconPath: Icons.info_outline,
                         title: S.of(context).aboutUs,
-                        onTap: () {
-                          context.nav.pushNamed(Routes.aboutUs);
-                        },
+                        onTap: () {},
                       ),
                       25.ph,
-                      isLoggedIn
-                          ? SizedBox(
-                              width: double.infinity,
-                              child: TextButton(
-                                onPressed: () {
-                                  logoutpopup(context);
-                                },
-                                style: ButtonStyle(
-                                  shape: WidgetStateProperty.all(
-                                      RoundedRectangleBorder(
-                                          borderRadius:
-                                              BorderRadius.circular(50.r))),
-                                  side: WidgetStateProperty.all(
-                                      const BorderSide(color: Colors.red)),
-                                  padding: WidgetStateProperty.all(
-                                      EdgeInsets.symmetric(
-                                          horizontal: 16.r, vertical: 12.r)),
-                                ),
-                                child: Row(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    const Icon(
-                                      Icons.logout,
-                                      color: Colors.red,
-                                    ),
-                                    16.pw,
-                                    Text(
-                                      S.of(context).logout,
-                                      style: AppTextStyle.normalBody
-                                          .copyWith(color: Colors.red),
-                                    ),
-                                  ],
-                                ),
+                      SizedBox(
+                        width: double.infinity,
+                        child: TextButton(
+                          onPressed: () {
+                            logoutpopup(context);
+                          },
+                          style: ButtonStyle(
+                            shape: WidgetStateProperty.all(
+                                RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(50.r))),
+                            side: WidgetStateProperty.all(
+                                const BorderSide(color: Colors.red)),
+                            padding: WidgetStateProperty.all(
+                                EdgeInsets.symmetric(
+                                    horizontal: 16.r, vertical: 12.r)),
+                          ),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              const Icon(
+                                Icons.logout,
+                                color: Colors.red,
                               ),
-                            )
-                          : const SizedBox.shrink(),
-                      25.ph,
-                      isLoggedIn
-                          ? SizedBox(
-                              width: double.infinity,
-                              child: TextButton(
-                                onPressed: () {
-                                  deleteACpopup(context);
-                                },
-                                style: ButtonStyle(
-                                  shape: WidgetStateProperty.all(
-                                      RoundedRectangleBorder(
-                                          borderRadius:
-                                              BorderRadius.circular(50.r))),
-                                  side: WidgetStateProperty.all(
-                                      const BorderSide(color: Colors.red)),
-                                  padding: WidgetStateProperty.all(
-                                      EdgeInsets.symmetric(
-                                          horizontal: 16.r, vertical: 12.r)),
-                                ),
-                                child: Row(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    const Icon(
-                                      Icons.delete_forever,
-                                      color: Colors.red,
-                                    ),
-                                    16.pw,
-                                    Text(
-                                      S.of(context).deleteAccount,
-                                      style: AppTextStyle.normalBody
-                                          .copyWith(color: Colors.red),
-                                    ),
-                                  ],
-                                ),
+                              16.pw,
+                              Text(
+                                S.of(context).logout,
+                                style: AppTextStyle.normalBody
+                                    .copyWith(color: Colors.red),
                               ),
-                            )
-                          : const SizedBox.shrink(),
+                            ],
+                          ),
+                        ),
+                      )
                     ],
                   ),
                 )
               ],
             );
           }),
-    );
-  }
-
-  Widget switches() {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 12).r,
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          ValueListenableBuilder(
-            valueListenable: Hive.box(AppConstants.appSettingsBox).listenable(),
-            builder: (context, box, _) {
-              final bool isDarkTheme =
-                  box.get(AppConstants.isDarkTheme, defaultValue: false);
-              return AnimatedToggleSwitch<bool>.dual(
-                current: isDarkTheme,
-                first: false,
-                second: true,
-                onChanged: (value) {
-                  setTheme(value: value);
-                },
-                styleBuilder: (b) => ToggleStyle(
-                  indicatorColor:
-                      b ? AppColor.primaryColor : AppColor.grayBlackBG,
-                ),
-                iconBuilder: (value) => value
-                    ? const Icon(
-                        Icons.light_mode,
-                        color: Colors.white,
-                      )
-                    : const Icon(
-                        Icons.dark_mode,
-                        color: Colors.white,
-                      ),
-                textBuilder: (value) => value
-                    ? const Center(child: Text('Light'))
-                    : const Center(child: Text('Dark')),
-              );
-            },
-          ),
-          SizedBox(
-            width: 120.w,
-            child: const LocaLizationSelector(),
-          ),
-        ],
-      ),
     );
   }
 
@@ -322,7 +229,6 @@ class ProfileScreen extends StatelessWidget {
       context: context,
       builder: (context) => Consumer(
         builder: (context, ref, child) {
-          final isLoading = ref.watch(logoutProvider);
           return Center(
             child: Padding(
               padding: EdgeInsets.all(20.w),
@@ -335,27 +241,26 @@ class ProfileScreen extends StatelessWidget {
                 width: 335.w,
                 padding: EdgeInsets.all(20.h),
                 child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      S.of(context).urabttolgot,
-                      style: AppTextStyle.normalBody.copyWith(
-                        fontWeight: FontWeight.w500,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        S.of(context).urabttolgot,
+                        style: AppTextStyle.normalBody.copyWith(
+                          fontWeight: FontWeight.w500,
+                        ),
+                        textAlign: TextAlign.center,
                       ),
-                      textAlign: TextAlign.center,
-                    ),
-                    10.ph,
-                    Text(
-                      S.of(context).arusre,
-                      style: AppTextStyle.normalBody,
-                      textAlign: TextAlign.center,
-                    ),
-                    20.ph,
-                    SizedBox(
-                      height: 50.h,
-                      width: 335.w,
-                      child: Row(
-                        children: [
+                      10.ph,
+                      Text(
+                        S.of(context).arusre,
+                        style: AppTextStyle.normalBody,
+                        textAlign: TextAlign.center,
+                      ),
+                      20.ph,
+                      SizedBox(
+                        height: 50.h,
+                        width: 335.w,
+                        child: Row(children: [
                           Expanded(
                             child: CustomButton(
                               buttonColor:
@@ -368,50 +273,18 @@ class ProfileScreen extends StatelessWidget {
                           ),
                           10.pw,
                           Expanded(
-                            child: isLoading
-                                ? const Center(
-                                    child: CircularProgressIndicator(),
-                                  )
-                                : CustomButton(
-                                    text: S.of(context).y,
-                                    onPressed: () {
-                                      ref
-                                          .read(logoutProvider.notifier)
-                                          .logout()
-                                          .then((value) async {
-                                        if (value == true) {
-                                          Hive.box(AppConstants.authBox)
-                                              .clear();
-
-                                          if (Hive.isBoxOpen(
-                                              AppConstants.cartBox)) {
-                                            await Hive.box<HiveCartModel>(
-                                                    AppConstants.cartBox)
-                                                .close();
-                                          }
-                                          await Hive.openBox<HiveCartModel>(
-                                              AppConstants.cartBox);
-                                          await Hive.box<HiveCartModel>(
-                                                  AppConstants.cartBox)
-                                              .clear();
-                                          ref.invalidate(
-                                              homeScreenIndexProvider);
-                                          // ignore: use_build_context_synchronously
-                                          context.nav.pop();
-                                          // ignore: use_build_context_synchronously
-                                          context.nav.pushNamed(
-                                            Routes.login,
-                                          );
-                                        }
-                                      });
-                                    },
-                                  ),
-                          ),
-                        ],
-                      ),
-                    )
-                  ],
-                ),
+                              child: CustomButton(
+                                  text: S.of(context).y,
+                                  onPressed: () {
+                                    context.nav.pop();
+                                    // ignore: use_build_context_synchronously
+                                    context.nav.pushNamed(
+                                      Routes.login,
+                                    );
+                                  })),
+                        ]),
+                      )
+                    ]),
               ),
             ),
           );
@@ -594,7 +467,7 @@ class OthersButton extends StatelessWidget {
     required this.onTap,
   });
 
-  final String iconPath;
+  final IconData iconPath;
   final String title;
   final Function onTap;
 
@@ -622,9 +495,8 @@ class OthersButton extends StatelessWidget {
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(4.r),
                   ),
-                  child: SvgPicture.asset(
+                  child: Icon(
                     iconPath,
-                    fit: BoxFit.cover,
                   ),
                 ),
                 16.pw,
