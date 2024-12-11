@@ -10,6 +10,7 @@ import 'package:parcel_track/views/dashboard/home_screen/confirm_details_screen.
 import 'package:parcel_track/views/dashboard/home_screen/courier_details_screen.dart';
 import 'package:parcel_track/views/dashboard/home_screen/details.dart';
 import 'package:parcel_track/views/dashboard/home_screen/instant_delivery_screen.dart';
+import 'package:parcel_track/views/dashboard/home_screen/schedule_delivery_screen.dart';
 import 'package:parcel_track/views/dashboard/order_screen/components/order_details.dart';
 import 'package:parcel_track/views/dashboard/payment/shipping_and_payment.dart';
 import 'package:parcel_track/views/dashboard/profile_screen/components/about_us.dart';
@@ -38,7 +39,7 @@ class Routes {
   static const detailsScreen = '/details';
   static const confirmDetailsScreen = '/confirmdetails';
   static const courierDetailsScreen = '/courierDetails';
-
+  static const scheduleDeliveryScreen = '/scheduleDelivery';
 
   static const cartScreen = '/cartScreen';
   static const shippingPayment = '/shippingPayment';
@@ -95,11 +96,9 @@ Route generatedRoutes(RouteSettings settings) {
     case Routes.courierDetailsScreen:
       child = const CourierDetailsScreen();
       break;
-
-
-
-
-
+    case Routes.scheduleDeliveryScreen:
+      child = const ScheduleDeliveryScreen();
+      break;
 
     case Routes.shippingPayment:
       child = ShippingAndPayment(isReOrder: settings.arguments as bool);

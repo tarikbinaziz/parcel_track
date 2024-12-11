@@ -102,16 +102,22 @@ class HomeScreen extends StatelessWidget {
                           ),
                         ),
                         SizedBox(height: 12.h),
-                        SizedBox(
-                          height: 124.h,
-                          width: double.infinity,
-                          child: _buildOptionCard(
-                            context,
-                            title: "Schedule Delivery",
-                            description:
-                                "Courier comes to pick up on your specified date and time",
-                            icon: Icons.schedule,
-                            backgroundColor: AppColor.greyBackgroundColor,
+                        GestureDetector(
+                          onTap: () {
+                            context.nav
+                                .pushNamed(Routes.scheduleDeliveryScreen);
+                          },
+                          child: SizedBox(
+                            height: 124.h,
+                            width: double.infinity,
+                            child: _buildOptionCard(
+                              context,
+                              title: "Schedule Delivery",
+                              description:
+                                  "Courier comes to pick up on your specified date and time",
+                              icon: Icons.schedule,
+                              backgroundColor: AppColor.greyBackgroundColor,
+                            ),
                           ),
                         ),
                       ],

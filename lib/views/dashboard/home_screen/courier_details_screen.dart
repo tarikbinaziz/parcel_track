@@ -63,7 +63,7 @@ class _CourierDetailsScreenState extends ConsumerState<CourierDetailsScreen> {
             DraggableScrollableSheet(
               initialChildSize: 0.4,
               minChildSize: 0.3,
-              maxChildSize: 0.9,
+              maxChildSize: 0.6,
               builder: (context, scrollController) {
                 return Container(
                   padding:
