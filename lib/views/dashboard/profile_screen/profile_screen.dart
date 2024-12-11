@@ -67,7 +67,7 @@ class ProfileScreen extends StatelessWidget {
                         title: S.of(context).aboutUs,
                         onTap: () {},
                       ),
-                      25.ph,
+                      32.ph,
                       SizedBox(
                         width: double.infinity,
                         child: TextButton(
@@ -79,7 +79,7 @@ class ProfileScreen extends StatelessWidget {
                                 RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(50.r))),
                             side: WidgetStateProperty.all(
-                                const BorderSide(color: Colors.red)),
+                                const BorderSide(color: AppColor.primaryColor)),
                             padding: WidgetStateProperty.all(
                                 EdgeInsets.symmetric(
                                     horizontal: 16.r, vertical: 12.r)),
@@ -89,13 +89,13 @@ class ProfileScreen extends StatelessWidget {
                             children: [
                               const Icon(
                                 Icons.logout,
-                                color: Colors.red,
+                                color: AppColor.primaryColor,
                               ),
                               16.pw,
                               Text(
                                 S.of(context).logout,
                                 style: AppTextStyle.normalBody
-                                    .copyWith(color: Colors.red),
+                                    .copyWith(color: AppColor.primaryColor),
                               ),
                             ],
                           ),
