@@ -16,12 +16,11 @@ class OnBoardingScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-
     return Container(
       decoration: BoxDecoration(
           image: DecorationImage(
               colorFilter: ColorFilter.mode(
-                  Colors.black.withOpacity(0.65), BlendMode.darken),
+                  Colors.black.withOpacity(0.70), BlendMode.darken),
               fit: BoxFit.cover,
               image: const AssetImage("assets/images/png/Rectangle 1467.png"))),
       child: Padding(
